@@ -1,0 +1,18 @@
+# Gradle / build
+.gradle/
+build/
+**/build/
+.kotlin/
+# Local machine config
+local.properties
+*.iml
+.idea/
+.vscode/
+.DS_Store
+captures/
+*.apk
+*.aab
+# signing
+*.jks
+*.keystore
+keystore.properties
