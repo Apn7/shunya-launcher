@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- বাংলা অনুবাদ: ছোট ও স্বাভাবিক, শব্দে শব্দে নয়। -->
+<resources>
+    <string name="common_back">ফিরে যান</string>
+    <string name="common_cancel">বাতিল</string>
+    <string name="common_ok">ঠিক আছে</string>
+    <string name="common_save">সংরক্ষণ</string>
+    <string name="common_done">হয়ে গেছে</string>
+    <string name="common_reset">রিসেট</string>
+    <string name="common_on">চালু</string>
+    <string name="common_off">বন্ধ</string>
+    <string name="common_enable">চালু করুন</string>
+    <string name="common_disable">বন্ধ করুন</string>
+    <string name="common_open">খুলুন</string>
+    <string name="common_close">বন্ধ করুন</string>
+    <string name="common_remove">সরান</string>
+    <string name="common_edit">সম্পাদনা</string>
+    <string name="common_search">খুঁজুন</string>
+    <string name="common_settings">সেটিংস</string>
+    <string name="common_add">যোগ করুন</string>
+    <string name="common_delete">মুছুন</string>
+    <string name="common_clear">মুছে ফেলুন</string>
+    <string name="common_copy">কপি</string>
+    <string name="common_copied">কপি হয়েছে</string>
+    <string name="common_change">বদলান</string>
+    <string name="common_choose">বেছে নিন</string>
+    <string name="common_next">পরের ধাপ</string>
+    <string name="common_skip">এড়িয়ে যান</string>
+    <string name="common_continue">চালিয়ে যান</string>
+    <string name="common_allow">অনুমতি দিন</string>
+    <string name="common_not_now">এখন নয়</string>
+    <string name="common_retry">আবার চেষ্টা করুন</string>
+    <string name="common_undo">ফিরিয়ে আনুন</string>
+    <string name="common_yes">হ্যাঁ</string>
+    <string name="common_no">না</string>
+    <string name="common_none">কিছু না</string>
+    <string name="common_more">আরও</string>
+    <string name="common_apps">অ্যাপ</string>
+
+    <string name="core_permission_granted">অনুমতি আছে</string>
+    <string name="core_permission_not_granted">অনুমতি নেই</string>
+    <string name="core_permission_grant">অনুমতি দিন</string>
+
+    <string name="core_duration_hours_minutes">%1$d ঘণ্টা %2$d মিনিট</string>
+    <string name="core_duration_hours">%1$d ঘণ্টা</string>
+    <string name="core_duration_minutes">%1$d মিনিট</string>
+    <string name="core_duration_under_minute">১ মিনিটের কম</string>
+
+    <string name="core_error_open_app">অ্যাপটি খোলা গেল না</string>
+    <string name="core_error_no_handler">এই কাজ করার মতো কোনো অ্যাপ ফোনে নেই</string>
+    <string name="core_placeholder_title">শীঘ্রই আসছে</string>
+    <string name="core_placeholder_message">শূন্যের এই অংশ এখনো তৈরি হচ্ছে।</string>
+</resources>
