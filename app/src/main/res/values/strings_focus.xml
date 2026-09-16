@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Prefix: focus_ -->
+<resources>
+    <string name="focus_accessibility_label">Shunya focus</string>
+    <string name="focus_accessibility_description">Lets Shunya lock the screen when you double-tap home, and show the pause screen when a blocked app opens during focus. Shunya only sees which app is in front, never what is on the screen. Nothing leaves your phone.</string>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="focus_accessibility_label">শূন্য ফোকাস</string>
+    <string name="focus_accessibility_description">হোমে ডাবল-ট্যাপ করলে শূন্য স্ক্রিন লক করতে পারে, আর ফোকাসের সময় ব্লক করা অ্যাপ খুললে বিরতির স্ক্রিন দেখাতে পারে। শূন্য শুধু দেখে কোন অ্যাপ সামনে আছে, স্ক্রিনে কী আছে তা কখনো নয়। কিছুই আপনার ফোনের বাইরে যায় না।</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- "Paper & Ink" palette. Runtime colours live in core/designsystem/theme/ShunyaColors.kt;
+         these copies exist only for XML (window background before the first frame, launcher icon). -->
+    <color name="paper">#FFF3EFE6</color>
+    <color name="paper_ink">#FF1B1B1B</color>
+    <color name="ink">#FF000000</color>
+    <color name="ink_text">#FFEDEDED</color>
+    <color name="slate">#FF15171A</color>
+    <color name="slate_text">#FFE6E6E6</color>
+
+    <color name="window_background">@color/paper</color>
+    <color name="ic_launcher_background">@color/paper_ink</color>
+    <color name="ic_launcher_ring">@color/paper</color>
+</resources>

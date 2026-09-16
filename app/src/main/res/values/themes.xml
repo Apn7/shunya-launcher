@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Launcher window. The window is transparent and shows the system wallpaper, so
+      "wallpaper mode" is only a Compose decision: when it is off, Compose paints the
+      solid theme background over the whole window. System bars are transparent
+      (edge-to-edge); their icon colours are set at runtime from the Shunya theme.
+    -->
+    <style name="Theme.Shunya" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackground">@color/window_background</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <!-- Gate screen (mindful pause / limit / blocked): opaque, no wallpaper, no translucency. -->
+    <style name="Theme.Shunya.Gate">
+        <item name="android:windowShowWallpaper">false</item>
+        <item name="android:windowBackground">@color/window_background</item>
+    </style>
+</resources>

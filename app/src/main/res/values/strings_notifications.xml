@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Prefix: notifications_ -->
+<resources>
+    <string name="notifications_listener_label">Shunya notification filter</string>
+</resources>
