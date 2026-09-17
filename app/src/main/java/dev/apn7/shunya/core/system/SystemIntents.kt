@@ -20,6 +20,9 @@ import dev.apn7.shunya.R
  */
 object SystemIntents {
 
+    /** The home screen (Shunya when it is the default launcher), e.g. for the gate's "Not now". */
+    fun home(): Intent = Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_HOME)
+
     /** The system alarm list (tap on the home clock). */
     fun showAlarms(): Intent = Intent(AlarmClock.ACTION_SHOW_ALARMS)
 
