@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Home, app drawer, search, app actions, favorites editor, hidden apps. -->
+<resources>
+    <!-- Home screen -->
+    <string name="home_open_alarms">Open alarms</string>
+    <string name="home_open_calendar">Open calendar</string>
+    <string name="home_battery">Battery %1$d%%</string>
+    <string name="home_battery_charging">Battery %1$d%% · charging</string>
+    <string name="home_next_alarm">Alarm %1$s</string>
+    <string name="home_status_focus_left">Focus · %1$s left</string>
+    <string name="home_status_focus_on">Focus is on</string>
+    <plurals name="home_status_held">
+        <item quantity="one">%1$d notification held</item>
+        <item quantity="other">%1$d notifications held</item>
+    </plurals>
+    <string name="home_status_screen_time">Screen time today %1$s</string>
+    <string name="home_intention_hint">Tap to write today\'s intention</string>
+    <string name="home_intention_title">Today\'s intention</string>
+    <string name="home_intention_placeholder">Today: finish thesis slides</string>
+    <string name="home_apps_button">apps</string>
+    <string name="home_favorites_empty">Swipe up for your apps. Long-press one to add it here.</string>
+    <string name="home_action_open_drawer">Open app list</string>
+    <string name="home_action_menu">Home menu</string>
+    <string name="home_edit_intention">Edit intention</string>
+
+    <!-- Gestures -->
+    <string name="home_shade_unavailable">This phone doesn\'t let Shunya open notifications</string>
+    <string name="home_gesture_app_missing">The app for this gesture is no longer installed</string>
+    <string name="home_focus_started">Focus started</string>
+    <string name="home_focus_ended">Focus ended</string>
+    <string name="home_lock_hint_title">Double-tap to lock</string>
+    <string name="home_lock_hint_message">Locking the screen needs Shunya\'s accessibility service. It only locks the screen and never reads what is on it.</string>
+    <string name="home_lock_unavailable">Double-tap to lock needs the accessibility service</string>
+
+    <!-- Quick menu (long-press on home) -->
+    <string name="home_menu_focus_now">Focus now</string>
+    <string name="home_menu_wallpaper_show">Show wallpaper</string>
+    <string name="home_menu_wallpaper_hide">Hide wallpaper</string>
+    <string name="home_menu_grayscale_on">Turn grayscale on</string>
+    <string name="home_menu_grayscale_off">Turn grayscale off</string>
+    <string name="home_menu_grayscale_setup">Needs a one-time setup</string>
+    <string name="home_menu_edit_home">Edit home</string>
+
+    <!-- App drawer and search -->
+    <string name="drawer_search_placeholder">Search apps</string>
+    <string name="drawer_loading">Loading apps…</string>
+    <string name="drawer_empty">No apps to show</string>
+    <string name="drawer_work_tag">work</string>
+    <string name="drawer_alphabet_index">Alphabet index</string>
+    <string name="drawer_jump_to">Jump to %1$s</string>
+    <string name="search_no_results">No apps match “%1$s”</string>
+    <string name="search_web">Search the web for “%1$s”</string>
+    <string name="search_play_store">Search Play Store for “%1$s”</string>
+    <string name="search_calculator_result">= %1$s</string>
+    <string name="search_calculator_copy">Tap to copy</string>
+    <string name="search_calculator_label">Calculator result</string>
+
+    <!-- App action sheet -->
+    <string name="apps_action_rename">Rename</string>
+    <string name="apps_action_add_home">Add to home</string>
+    <string name="apps_action_remove_home">Remove from home</string>
+    <string name="apps_home_full">Home is full (%1$d apps)</string>
+    <string name="apps_action_hide">Hide</string>
+    <string name="apps_hidden_toast">%1$s is hidden. Find it in Settings › Hidden apps.</string>
+    <string name="apps_action_distracting_on">Mark as distracting</string>
+    <string name="apps_action_distracting_off">Not distracting anymore</string>
+    <string name="apps_distracting_summary">Shows a mindful pause before it opens</string>
+    <string name="apps_action_limit">Daily limit</string>
+    <string name="apps_limit_value">%1$s a day</string>
+    <string name="apps_limit_title">Daily limit for %1$s</string>
+    <string name="apps_shortcuts">Shortcuts</string>
+    <string name="apps_action_info">App info</string>
+    <string name="apps_action_uninstall">Uninstall</string>
+    <string name="apps_usage_today">%1$s today · opened %2$d×</string>
+    <string name="apps_rename_title">Rename %1$s</string>
+    <string name="apps_rename_reset">Original name</string>
+    <string name="apps_original_name">Original name: %1$s</string>
+    <string name="apps_home_added">%1$s added to home</string>
+
+    <!-- Settings > Home (favorites editor) -->
+    <string name="home_settings_title">Home</string>
+    <string name="home_settings_favorites">Favorites</string>
+    <string name="home_settings_add">Add app</string>
+    <string name="home_settings_count">%1$d of %2$d</string>
+    <string name="home_settings_full">Home is full. Raise the maximum or remove an app.</string>
+    <string name="home_settings_empty">No favorites yet</string>
+    <string name="home_settings_move_up">Up</string>
+    <string name="home_settings_move_down">Down</string>
+    <string name="home_settings_move_up_label">Move %1$s up</string>
+    <string name="home_settings_move_down_label">Move %1$s down</string>
+    <string name="home_settings_layout">Layout</string>
+    <string name="home_settings_max">Maximum favorites</string>
+    <string name="home_settings_intention">Intention line</string>
+    <string name="home_settings_intention_summary">A one-line reminder under the clock</string>
+    <string name="home_settings_intention_text">Intention</string>
+    <string name="home_settings_intention_empty">Not written yet</string>
+    <string name="home_settings_apps_button">Apps button</string>
+    <string name="home_settings_apps_button_summary">A small “apps” link on home, if you prefer tapping to swiping</string>
+    <string name="home_settings_picker_title">Add to home</string>
+
+    <!-- Settings > Hidden apps -->
+    <string name="apps_hidden_title">Hidden apps</string>
+    <string name="apps_hidden_empty">No hidden apps</string>
+    <string name="apps_hidden_empty_message">Hide an app by long-pressing it in the app list.</string>
+    <string name="apps_unhide">Unhide</string>
+</resources>
