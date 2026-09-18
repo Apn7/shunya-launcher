@@ -85,7 +85,7 @@ class AppContainer(context: Context, val appScope: CoroutineScope) {
 
     val focusController: FocusController by lazy { FocusSessionController() }
 
-    val usageRepository: UsageRepository by lazy { UsageStatsRepository() }
+    val usageRepository: UsageRepository by lazy { UsageStatsRepository(appContext) }
 
     val grayscaleController: GrayscaleController by lazy { SecureSettingsGrayscale(appContext) }
     // endregion focus
