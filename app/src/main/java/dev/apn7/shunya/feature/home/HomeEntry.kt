@@ -30,6 +30,7 @@ import dev.apn7.shunya.core.designsystem.theme.Motion
 import dev.apn7.shunya.core.designsystem.theme.ShunyaTheme
 import dev.apn7.shunya.core.model.LauncherApp
 import dev.apn7.shunya.core.navigation.Navigator
+import dev.apn7.shunya.feature.home.actions.AppActionSheetHost
 import dev.apn7.shunya.feature.home.components.LockHintDialog
 import dev.apn7.shunya.feature.home.components.TextInputDialog
 import dev.apn7.shunya.feature.home.components.rememberClockFormatter
@@ -179,6 +180,9 @@ fun HomeEntry(navigator: Navigator) {
             onGrayscale = { actions.toggleGrayscale() },
             onEditHome = { actions.editHome() },
         )
+    }
+    overlays.actionTarget?.let { key ->
+        AppActionSheetHost(appKey = key, onDone = { overlays.actionTarget = null })
     }
     if (overlays.editingIntention) {
         TextInputDialog(
