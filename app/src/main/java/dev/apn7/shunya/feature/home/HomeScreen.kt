@@ -86,7 +86,9 @@ internal fun HomeScreen(
             IntentionLine(intention = home.intention, alignment = alignment, onClick = onIntentionClick)
         }
         Spacer(Modifier.weight(1f))
-        if (state.favorites.isEmpty() && home.maxFavorites > 0) {
+        // Onboarding or a restored backup may store more than the current maximum: never show more.
+        val favorites = state.favorites.take(home.maxFavorites)
+        if (favorites.isEmpty() && home.maxFavorites > 0) {
             Text(
                 text = stringResource(R.string.home_favorites_empty),
                 style = ShunyaTheme.typography.bodySmall,
@@ -96,7 +98,7 @@ internal fun HomeScreen(
             )
         } else {
             FavoritesList(
-                favorites = state.favorites,
+                favorites = favorites,
                 alignment = alignment,
                 onClick = onAppClick,
                 onLongClick = onAppLongClick,
