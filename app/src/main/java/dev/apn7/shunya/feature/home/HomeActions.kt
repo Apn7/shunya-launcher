@@ -39,6 +39,8 @@ internal class HomeActions(
     }
 
     fun onSwipe(direction: SwipeDirection) {
+        // A long-press that opened a sheet may keep moving: that is not a swipe.
+        if (overlays.quickMenuOpen || overlays.actionTarget != null) return
         val gestures = container.settingsRepository.settings.value.gestures
         when (direction) {
             SwipeDirection.Up -> overlays.openDrawer(search = false)
