@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- বাংলা: ছোট ও স্বাভাবিক, শব্দে শব্দে অনুবাদ নয়। -->
+<resources>
+    <!-- হোম স্ক্রিন -->
+    <string name="home_open_alarms">অ্যালার্ম খুলুন</string>
+    <string name="home_open_calendar">ক্যালেন্ডার খুলুন</string>
+    <string name="home_battery">ব্যাটারি %1$d%%</string>
+    <string name="home_battery_charging">ব্যাটারি %1$d%% · চার্জ হচ্ছে</string>
+    <string name="home_next_alarm">অ্যালার্ম %1$s</string>
+    <string name="home_status_focus_left">ফোকাস · আর %1$s</string>
+    <string name="home_status_focus_on">ফোকাস চালু আছে</string>
+    <plurals name="home_status_held">
+        <item quantity="one">%1$dটি নোটিফিকেশন জমা আছে</item>
+        <item quantity="other">%1$dটি নোটিফিকেশন জমা আছে</item>
+    </plurals>
+    <string name="home_status_screen_time">আজকের স্ক্রিন টাইম %1$s</string>
+    <string name="home_intention_hint">আজকের লক্ষ্য লিখতে ট্যাপ করুন</string>
+    <string name="home_intention_title">আজকের লক্ষ্য</string>
+    <string name="home_intention_placeholder">আজ: থিসিসের স্লাইড শেষ করা</string>
+    <string name="home_apps_button">অ্যাপ</string>
+    <string name="home_favorites_empty">অ্যাপ দেখতে উপরে সোয়াইপ করুন। এখানে রাখতে কোনো অ্যাপ চেপে ধরুন।</string>
+    <string name="home_action_open_drawer">অ্যাপের তালিকা খুলুন</string>
+    <string name="home_action_menu">হোম মেনু</string>
+    <string name="home_edit_intention">লক্ষ্য বদলান</string>
+
+    <!-- জেসচার -->
+    <string name="home_shade_unavailable">এই ফোনে শূন্য নোটিফিকেশন খুলতে পারে না</string>
+    <string name="home_gesture_app_missing">এই জেসচারের অ্যাপটি আর ফোনে নেই</string>
+    <string name="home_focus_started">ফোকাস শুরু হলো</string>
+    <string name="home_focus_ended">ফোকাস শেষ হলো</string>
+    <string name="home_lock_hint_title">ডাবল-ট্যাপে লক</string>
+    <string name="home_lock_hint_message">স্ক্রিন লক করতে শূন্যের অ্যাক্সেসিবিলিটি সার্ভিস লাগবে। এটি শুধু স্ক্রিন লক করে, স্ক্রিনে কী আছে তা কখনো পড়ে না।</string>
+    <string name="home_lock_unavailable">ডাবল-ট্যাপে লক করতে অ্যাক্সেসিবিলিটি সার্ভিস লাগবে</string>
+
+    <!-- কুইক মেনু -->
+    <string name="home_menu_focus_now">এখনই ফোকাস</string>
+    <string name="home_menu_wallpaper_show">ওয়ালপেপার দেখান</string>
+    <string name="home_menu_wallpaper_hide">ওয়ালপেপার লুকান</string>
+    <string name="home_menu_grayscale_on">সাদা-কালো চালু করুন</string>
+    <string name="home_menu_grayscale_off">সাদা-কালো বন্ধ করুন</string>
+    <string name="home_menu_grayscale_setup">একবার সেটআপ করতে হবে</string>
+    <string name="home_menu_edit_home">হোম সাজান</string>
+
+    <!-- অ্যাপের তালিকা ও খোঁজ -->
+    <string name="drawer_search_placeholder">অ্যাপ খুঁজুন</string>
+    <string name="drawer_loading">অ্যাপ আসছে…</string>
+    <string name="drawer_empty">দেখানোর মতো কোনো অ্যাপ নেই</string>
+    <string name="drawer_work_tag">অফিস</string>
+    <string name="drawer_alphabet_index">বর্ণসূচি</string>
+    <string name="drawer_jump_to">%1$s-এ যান</string>
+    <string name="search_no_results">“%1$s” নামে কোনো অ্যাপ নেই</string>
+    <string name="search_web">ওয়েবে খুঁজুন: “%1$s”</string>
+    <string name="search_play_store">প্লে স্টোরে খুঁজুন: “%1$s”</string>
+    <string name="search_calculator_result">= %1$s</string>
+    <string name="search_calculator_copy">কপি করতে ট্যাপ করুন</string>
+    <string name="search_calculator_label">হিসাবের ফল</string>
+
+    <!-- অ্যাপের অপশন -->
+    <string name="apps_action_rename">নাম বদলান</string>
+    <string name="apps_action_add_home">হোমে রাখুন</string>
+    <string name="apps_action_remove_home">হোম থেকে সরান</string>
+    <string name="apps_home_full">হোম ভরা (%1$dটি অ্যাপ)</string>
+    <string name="apps_action_hide">লুকান</string>
+    <string name="apps_hidden_toast">%1$s লুকানো হলো। সেটিংস › লুকানো অ্যাপে পাবেন।</string>
+    <string name="apps_action_distracting_on">মনোযোগ নষ্ট করে বলে চিহ্নিত করুন</string>
+    <string name="apps_action_distracting_off">আর মনোযোগ নষ্টকারী নয়</string>
+    <string name="apps_distracting_summary">খোলার আগে একটু থামার সুযোগ দেবে</string>
+    <string name="apps_action_limit">দৈনিক সীমা</string>
+    <string name="apps_limit_value">দিনে %1$s</string>
+    <string name="apps_limit_title">%1$s-এর দৈনিক সীমা</string>
+    <string name="apps_shortcuts">শর্টকাট</string>
+    <string name="apps_action_info">অ্যাপের তথ্য</string>
+    <string name="apps_action_uninstall">আনইনস্টল</string>
+    <string name="apps_usage_today">আজ %1$s · %2$d বার খোলা হয়েছে</string>
+    <string name="apps_rename_title">%1$s-এর নাম বদলান</string>
+    <string name="apps_rename_reset">আসল নাম</string>
+    <string name="apps_original_name">আসল নাম: %1$s</string>
+    <string name="apps_home_added">%1$s হোমে রাখা হলো</string>
+
+    <!-- সেটিংস › হোম -->
+    <string name="home_settings_title">হোম</string>
+    <string name="home_settings_favorites">প্রিয় অ্যাপ</string>
+    <string name="home_settings_add">অ্যাপ যোগ করুন</string>
+    <string name="home_settings_count">%2$d-এর মধ্যে %1$d</string>
+    <string name="home_settings_full">হোম ভরা। সর্বোচ্চ সংখ্যা বাড়ান বা একটি অ্যাপ সরান।</string>
+    <string name="home_settings_empty">এখনো কোনো প্রিয় অ্যাপ নেই</string>
+    <string name="home_settings_move_up">উপরে</string>
+    <string name="home_settings_move_down">নিচে</string>
+    <string name="home_settings_move_up_label">%1$s উপরে নিন</string>
+    <string name="home_settings_move_down_label">%1$s নিচে নিন</string>
+    <string name="home_settings_layout">সাজানো</string>
+    <string name="home_settings_max">সর্বোচ্চ প্রিয় অ্যাপ</string>
+    <string name="home_settings_intention">লক্ষ্যের লাইন</string>
+    <string name="home_settings_intention_summary">ঘড়ির নিচে এক লাইনের মনে করিয়ে দেওয়া কথা</string>
+    <string name="home_settings_intention_text">লক্ষ্য</string>
+    <string name="home_settings_intention_empty">এখনো লেখা হয়নি</string>
+    <string name="home_settings_apps_button">অ্যাপ বোতাম</string>
+    <string name="home_settings_apps_button_summary">সোয়াইপের বদলে ট্যাপ করতে চাইলে হোমে ছোট একটি “অ্যাপ” লিংক</string>
+    <string name="home_settings_picker_title">হোমে রাখুন</string>
+
+    <!-- সেটিংস › লুকানো অ্যাপ -->
+    <string name="apps_hidden_title">লুকানো অ্যাপ</string>
+    <string name="apps_hidden_empty">কোনো লুকানো অ্যাপ নেই</string>
+    <string name="apps_hidden_empty_message">অ্যাপের তালিকায় কোনো অ্যাপ চেপে ধরে লুকাতে পারেন।</string>
+    <string name="apps_unhide">আবার দেখান</string>
+</resources>
