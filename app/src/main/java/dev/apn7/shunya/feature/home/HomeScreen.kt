@@ -68,7 +68,9 @@ internal fun HomeScreen(
             .padding(horizontal = Spacing.screenHorizontal),
         horizontalAlignment = alignment.horizontal(),
     ) {
-        Spacer(Modifier.height(Spacing.xxl))
+        // A small fixed gap plus a flexible one: on short screens the flexible part collapses first.
+        Spacer(Modifier.height(Spacing.l))
+        Spacer(Modifier.weight(0.3f))
         ClockBlock(
             now = now,
             formatter = formatter,

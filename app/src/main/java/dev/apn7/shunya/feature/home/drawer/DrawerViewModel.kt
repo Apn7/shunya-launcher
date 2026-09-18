@@ -90,6 +90,10 @@ class DrawerViewModel(
         .flowOn(Dispatchers.Default)
         .stateIn(viewModelScope, SharingStarted.Eagerly, DrawerUiState())
 
+    init {
+        onOpened()
+    }
+
     fun onQueryChange(text: String) {
         query = text
         queryFlow.value = text
@@ -97,7 +101,7 @@ class DrawerViewModel(
 
     fun clearQuery() = onQueryChange("")
 
-    /** The drawer became visible: refresh the "Most used" order when it is the chosen sort. */
+    /** The drawer became visible (and once at start): refresh the "Most used" order when it is the chosen sort. */
     fun onOpened() {
         if (settingsRepository.settings.value.drawer.sort != DrawerSort.MostUsed) return
         viewModelScope.launch {

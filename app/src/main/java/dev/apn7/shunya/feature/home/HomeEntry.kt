@@ -76,8 +76,15 @@ fun HomeEntry(navigator: Navigator) {
     }
 
     LifecycleEventEffect(Lifecycle.Event.ON_RESUME) { homeViewModel.refreshScreenTime() }
+    val closeDrawer: () -> Unit = {
+        keyboard?.hide()
+        overlays.closeDrawer()
+    }
     LaunchedEffect(container, overlays) {
-        container.homeEvents.homePressed.collect { press -> overlays.closeAll(animate = press.wasAlreadyHome) }
+        container.homeEvents.homePressed.collect { press ->
+            keyboard?.hide()
+            overlays.closeAll(animate = press.wasAlreadyHome)
+        }
     }
     // Reset search once the drawer has finished closing, so its content does not change mid-animation.
     LaunchedEffect(overlays.drawerOpen) {
@@ -86,7 +93,7 @@ fun HomeEntry(navigator: Navigator) {
             drawerViewModel.clearQuery()
         }
     }
-    BackHandler(enabled = overlays.drawerOpen) { overlays.closeDrawer() }
+    BackHandler(enabled = overlays.drawerOpen, onBack = closeDrawer)
 
     val appearance = state.settings.appearance
     val drawerPrefs = state.settings.drawer
@@ -161,7 +168,7 @@ fun HomeEntry(navigator: Navigator) {
             wallpaperMode = appearance.wallpaperMode,
             onQueryChange = { text -> drawerViewModel.onQueryChange(text) },
             onOpened = { drawerViewModel.onOpened() },
-            onClose = { overlays.closeDrawer() },
+            onClose = closeDrawer,
             onLaunch = launchFromDrawer,
             onAppLongClick = { app -> overlays.actionTarget = app.key },
         )
