@@ -81,13 +81,23 @@ class AppContainer(context: Context, val appScope: CoroutineScope) {
     // ------------------------------------------------------------------------------------------
 
     // region focus — focus & wellbeing
+    private val secureSettingsGrayscale: SecureSettingsGrayscale by lazy { SecureSettingsGrayscale(appContext, appScope) }
+
+    private val focusSessionController: FocusSessionController by lazy {
+        FocusSessionController(
+            configRepository = focusConfigRepository,
+            scope = appScope,
+            onScheduleGrayscale = { wanted -> secureSettingsGrayscale.applySchedule(wanted) },
+        )
+    }
+
     val launchPolicy: LaunchPolicy by lazy { FocusLaunchPolicy() }
 
-    val focusController: FocusController by lazy { FocusSessionController() }
+    val focusController: FocusController by lazy { focusSessionController }
 
     val usageRepository: UsageRepository by lazy { UsageStatsRepository(appContext) }
 
-    val grayscaleController: GrayscaleController by lazy { SecureSettingsGrayscale(appContext) }
+    val grayscaleController: GrayscaleController by lazy { secureSettingsGrayscale }
     // endregion focus
 
     // ------------------------------------------------------------------------------------------
