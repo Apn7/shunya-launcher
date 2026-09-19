@@ -103,4 +103,15 @@
         <item quantity="one">%d app</item>
         <item quantity="other">%d apps</item>
     </plurals>
+
+    <!-- Distracting apps -->
+    <string name="focus_distracting_intro">These apps get a mindful pause before they open, and stay closed during focus and schedules.</string>
+    <string name="focus_pause_length">Pause length</string>
+    <string name="focus_seconds_value">%1$d s</string>
+    <string name="focus_search_apps">Search apps</string>
+    <string name="focus_no_matches">No apps match</string>
+    <plurals name="focus_chosen_count">
+        <item quantity="one">%d chosen</item>
+        <item quantity="other">%d chosen</item>
+    </plurals>
 </resources>

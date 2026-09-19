@@ -95,4 +95,13 @@
     <plurals name="focus_apps_count">
         <item quantity="other">%dটি অ্যাপ</item>
     </plurals>
+
+    <string name="focus_distracting_intro">এই অ্যাপগুলো খোলার আগে একটু থামতে হয়, আর ফোকাস ও শিডিউলের সময় এগুলো বন্ধ থাকে।</string>
+    <string name="focus_pause_length">থামার সময়</string>
+    <string name="focus_seconds_value">%1$d সেকেন্ড</string>
+    <string name="focus_search_apps">অ্যাপ খুঁজুন</string>
+    <string name="focus_no_matches">মেলে এমন কোনো অ্যাপ নেই</string>
+    <plurals name="focus_chosen_count">
+        <item quantity="other">%dটি বাছাই করা</item>
+    </plurals>
 </resources>
