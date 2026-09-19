@@ -48,4 +48,17 @@
     <string name="focus_a11y_steps">In settings, choose “%1$s” and turn it on.</string>
     <string name="focus_a11y_agree">Agree and open settings</string>
     <string name="focus_a11y_manage">Open accessibility settings</string>
+
+    <!-- Grayscale setup -->
+    <string name="focus_grayscale_title">Grayscale</string>
+    <string name="focus_grayscale_switch_summary">Show the whole screen in black and white. Colour makes apps more tempting.</string>
+    <string name="focus_grayscale_ready">Ready: Shunya can turn grayscale on and off.</string>
+    <string name="focus_grayscale_needs_setup">Needs a one-time setup from a computer.</string>
+    <string name="focus_grayscale_setup_header">One-time setup</string>
+    <string name="focus_grayscale_step_1">1. On this phone, turn on Developer options and USB debugging.</string>
+    <string name="focus_grayscale_step_2">2. Connect the phone to a computer that has ADB (Android platform-tools) and run:</string>
+    <string name="focus_grayscale_step_3">3. Come back here. The switch above works from then on.</string>
+    <string name="focus_grayscale_why">Android lets an app change the colour mode only with this permission, and it can only be given over USB. It stays until you uninstall Shunya.</string>
+    <string name="focus_grayscale_colour_note">Grayscale uses Android\'s colour correction. If you already use colour correction, your own setting comes back when grayscale is turned off.</string>
+    <string name="focus_grayscale_clip_label">ADB command</string>
 </resources>

@@ -44,4 +44,16 @@
     <string name="focus_a11y_steps">সেটিংসে “%1$s” বেছে নিয়ে চালু করুন।</string>
     <string name="focus_a11y_agree">রাজি, সেটিংস খুলুন</string>
     <string name="focus_a11y_manage">অ্যাক্সেসিবিলিটি সেটিংস খুলুন</string>
+
+    <string name="focus_grayscale_title">গ্রেস্কেল</string>
+    <string name="focus_grayscale_switch_summary">পুরো স্ক্রিন সাদা-কালো দেখাবে। রঙিন অ্যাপ বেশি টানে।</string>
+    <string name="focus_grayscale_ready">প্রস্তুত: শূন্য গ্রেস্কেল চালু-বন্ধ করতে পারে।</string>
+    <string name="focus_grayscale_needs_setup">একবার কম্পিউটার থেকে সেটআপ করতে হবে।</string>
+    <string name="focus_grayscale_setup_header">একবারের সেটআপ</string>
+    <string name="focus_grayscale_step_1">১. এই ফোনে ডেভেলপার অপশন আর USB ডিবাগিং চালু করুন।</string>
+    <string name="focus_grayscale_step_2">২. ADB (অ্যান্ড্রয়েড platform-tools) আছে এমন কম্পিউটারে ফোনটি যুক্ত করে চালান:</string>
+    <string name="focus_grayscale_step_3">৩. এখানে ফিরে আসুন। এরপর থেকে ওপরের সুইচটি কাজ করবে।</string>
+    <string name="focus_grayscale_why">এই অনুমতি ছাড়া অ্যান্ড্রয়েড কোনো অ্যাপকে রঙের মোড বদলাতে দেয় না, আর এটি শুধু USB দিয়েই দেওয়া যায়। শূন্য আনইনস্টল না করা পর্যন্ত এটি থাকে।</string>
+    <string name="focus_grayscale_colour_note">গ্রেস্কেল অ্যান্ড্রয়েডের কালার কারেকশন ব্যবহার করে। আপনি আগে থেকেই কালার কারেকশন ব্যবহার করলে, গ্রেস্কেল বন্ধ করলে আপনার নিজের সেটিং ফিরে আসবে।</string>
+    <string name="focus_grayscale_clip_label">ADB কমান্ড</string>
 </resources>
