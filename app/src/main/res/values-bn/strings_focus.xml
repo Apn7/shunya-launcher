@@ -56,4 +56,43 @@
     <string name="focus_grayscale_why">এই অনুমতি ছাড়া অ্যান্ড্রয়েড কোনো অ্যাপকে রঙের মোড বদলাতে দেয় না, আর এটি শুধু USB দিয়েই দেওয়া যায়। শূন্য আনইনস্টল না করা পর্যন্ত এটি থাকে।</string>
     <string name="focus_grayscale_colour_note">গ্রেস্কেল অ্যান্ড্রয়েডের কালার কারেকশন ব্যবহার করে। আপনি আগে থেকেই কালার কারেকশন ব্যবহার করলে, গ্রেস্কেল বন্ধ করলে আপনার নিজের সেটিং ফিরে আসবে।</string>
     <string name="focus_grayscale_clip_label">ADB কমান্ড</string>
+
+    <string name="focus_hub_title">ফোকাস</string>
+    <string name="focus_hub_now_header">এখনই ফোকাস</string>
+    <string name="focus_hub_now_summary">ফোকাস চলার সময় মনোযোগ কাড়া অ্যাপগুলো বন্ধ থাকে।</string>
+    <string name="focus_hub_until_stop">যতক্ষণ না থামাই</string>
+    <string name="focus_hub_active_left">ফোকাস · আর %1$s</string>
+    <string name="focus_hub_active_open">ফোকাস চালু</string>
+    <string name="focus_hub_active_until">%1$s পর্যন্ত</string>
+    <string name="focus_hub_active_until_stop">আপনি শেষ না করা পর্যন্ত</string>
+    <string name="focus_hub_schedule_on">%1$s চলছে</string>
+    <string name="focus_hub_schedule_note">শিডিউল নিজে থেকেই শেষ হয়। বদলাতে শিডিউলে যান।</string>
+    <string name="focus_hub_end">ফোকাস শেষ করুন</string>
+    <string name="focus_hub_rules_header">নিয়ম</string>
+    <string name="focus_hub_distracting_summary">খোলার আগে একটু থামা</string>
+    <string name="focus_hub_limits_summary">বাছাই করা অ্যাপের জন্য দিনে কত মিনিট</string>
+    <string name="focus_hub_schedules_summary">নিজে থেকে শুরু হওয়া ফোকাস, যেমন ঘুমের সময়</string>
+    <string name="focus_hub_count_on">%1$dটি চালু</string>
+    <string name="focus_hub_wellbeing_header">ভালো থাকা</string>
+    <string name="focus_hub_screentime_summary">আজ ও গত ৭ দিন</string>
+    <string name="focus_hub_set_up">সেটআপ করুন</string>
+    <string name="focus_hub_blocking_header">নিয়ম কোথায় খাটবে</string>
+    <string name="focus_hub_needs_service">সিস্টেম-জুড়ে ব্লকিংয়ের জন্য অ্যাক্সেসিবিলিটি সার্ভিস লাগবে। চালু না হওয়া পর্যন্ত নিয়ম শুধু শূন্য থেকে খোলা অ্যাপে খাটবে।</string>
+    <string name="focus_distracting_title">মনোযোগ কাড়া অ্যাপ</string>
+    <string name="focus_limits_title">দৈনিক সীমা</string>
+    <string name="focus_schedules_title">শিডিউল</string>
+    <string name="focus_screentime_title">স্ক্রিন টাইম</string>
+    <string name="focus_schedule_default_name">ফোকাসের সময়</string>
+    <string name="focus_blocking_mode">ব্লকিং</string>
+    <string name="focus_blocking_summary">সব জায়গায় বেছে নিলে নোটিফিকেশন বা সাম্প্রতিক অ্যাপ থেকে খোলা অ্যাপেও খাটবে।</string>
+    <string name="focus_blocking_launcher_only">শুধু শূন্য থেকে খোলা অ্যাপে</string>
+    <string name="focus_blocking_system_wide">সব জায়গায়</string>
+    <string name="focus_usage_access_title">ব্যবহারের তথ্য</string>
+    <string name="focus_usage_access_description">দৈনিক সীমা আর স্ক্রিন টাইমের জন্য জানতে হয় কোন অ্যাপ কতক্ষণ ব্যবহার করছেন। এই তথ্য আপনার ফোনেই থাকে।</string>
+    <plurals name="focus_minutes">
+        <item quantity="other">%d মিনিট</item>
+    </plurals>
+    <plurals name="focus_apps_count">
+        <item quantity="other">%dটি অ্যাপ</item>
+    </plurals>
 </resources>

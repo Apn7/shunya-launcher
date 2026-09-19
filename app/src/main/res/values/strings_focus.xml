@@ -61,4 +61,46 @@
     <string name="focus_grayscale_why">Android lets an app change the colour mode only with this permission, and it can only be given over USB. It stays until you uninstall Shunya.</string>
     <string name="focus_grayscale_colour_note">Grayscale uses Android\'s colour correction. If you already use colour correction, your own setting comes back when grayscale is turned off.</string>
     <string name="focus_grayscale_clip_label">ADB command</string>
+
+    <!-- Focus hub -->
+    <string name="focus_hub_title">Focus</string>
+    <string name="focus_hub_now_header">Focus now</string>
+    <string name="focus_hub_now_summary">Distracting apps stay closed while focus is on.</string>
+    <string name="focus_hub_until_stop">Until I stop</string>
+    <string name="focus_hub_active_left">Focus · %1$s left</string>
+    <string name="focus_hub_active_open">Focus is on</string>
+    <string name="focus_hub_active_until">Until %1$s</string>
+    <string name="focus_hub_active_until_stop">Until you end it</string>
+    <string name="focus_hub_schedule_on">%1$s is on</string>
+    <string name="focus_hub_schedule_note">Schedules end on their own. To change one, open Schedules.</string>
+    <string name="focus_hub_end">End focus</string>
+    <string name="focus_hub_rules_header">Rules</string>
+    <string name="focus_hub_distracting_summary">A mindful pause before they open</string>
+    <string name="focus_hub_limits_summary">Minutes per day for the apps you choose</string>
+    <string name="focus_hub_schedules_summary">Focus that starts on its own, like bedtime</string>
+    <string name="focus_hub_count_on">%1$d on</string>
+    <string name="focus_hub_wellbeing_header">Wellbeing</string>
+    <string name="focus_hub_screentime_summary">Today and the last 7 days</string>
+    <string name="focus_hub_set_up">Set up</string>
+    <string name="focus_hub_blocking_header">Where rules apply</string>
+    <string name="focus_hub_needs_service">System-wide blocking needs the accessibility service. Until it is on, rules apply only to apps opened from Shunya.</string>
+    <string name="focus_distracting_title">Distracting apps</string>
+    <string name="focus_limits_title">Daily limits</string>
+    <string name="focus_schedules_title">Schedules</string>
+    <string name="focus_screentime_title">Screen time</string>
+    <string name="focus_schedule_default_name">Focus time</string>
+    <string name="focus_blocking_mode">Blocking</string>
+    <string name="focus_blocking_summary">Everywhere also catches apps opened from notifications or recent apps.</string>
+    <string name="focus_blocking_launcher_only">Only apps opened from Shunya</string>
+    <string name="focus_blocking_system_wide">Everywhere</string>
+    <string name="focus_usage_access_title">Usage access</string>
+    <string name="focus_usage_access_description">Daily limits and screen time need to know how long you use each app. It stays on your phone.</string>
+    <plurals name="focus_minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <plurals name="focus_apps_count">
+        <item quantity="one">%d app</item>
+        <item quantity="other">%d apps</item>
+    </plurals>
 </resources>
