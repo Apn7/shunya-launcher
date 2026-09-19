@@ -28,4 +28,24 @@
     <string name="focus_gate_hold_open_once">Hold to open once</string>
     <string name="focus_gate_hold_hint">Keep holding for %1$d seconds</string>
     <string name="focus_gate_hold_description">%1$s. Touch and hold for %2$d seconds.</string>
+
+    <!-- Accessibility disclosure -->
+    <string name="focus_a11y_title">Accessibility service</string>
+    <string name="focus_a11y_status_on">The service is on.</string>
+    <string name="focus_a11y_status_off">The service is off.</string>
+    <string name="focus_a11y_intro">Shunya can use Android\'s accessibility service for two things. It stays off until you turn it on, and you can turn it off at any time.</string>
+    <string name="focus_a11y_does_header">What it does</string>
+    <string name="focus_a11y_does_lock">Locks the screen when you double-tap the home screen (Android 9 and newer).</string>
+    <string name="focus_a11y_does_block">With system-wide blocking, shows the pause screen when a blocked app opens from anywhere: notifications, recent apps or links.</string>
+    <string name="focus_a11y_sees_header">What Shunya sees</string>
+    <string name="focus_a11y_sees_body">Only which app comes to the front, at the moment it does. That is checked against your focus rules and then forgotten.</string>
+    <string name="focus_a11y_never_header">What Shunya never does</string>
+    <string name="focus_a11y_never_read">It never reads what is on your screen or what you type.</string>
+    <string name="focus_a11y_never_store">It never records, keeps or shares anything. Shunya has no internet permission.</string>
+    <string name="focus_a11y_never_act">It never taps, types or changes anything in other apps.</string>
+    <string name="focus_a11y_control_header">You stay in control</string>
+    <string name="focus_a11y_without">Without the service, focus rules only apply to apps you open from Shunya.</string>
+    <string name="focus_a11y_steps">In settings, choose “%1$s” and turn it on.</string>
+    <string name="focus_a11y_agree">Agree and open settings</string>
+    <string name="focus_a11y_manage">Open accessibility settings</string>
 </resources>

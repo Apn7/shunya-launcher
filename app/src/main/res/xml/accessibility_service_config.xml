@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Shunya focus accessibility service (opt-in).
-  Only window-state changes are observed (which app came to the foreground); window
-  content is never read. Used for: lock screen on double-tap, system-wide blocking.
+  Shunya focus (opt-in, shown only after the in-app disclosure).
+  Only window-state changes are observed, i.e. which app came to the front; window content is
+  never retrieved (canRetrieveWindowContent=false) and no gestures are performed.
+  Used for: lock screen on double-tap, system-wide blocking.
 -->
 <accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
     android:accessibilityEventTypes="typeWindowStateChanged"
@@ -11,4 +12,4 @@
     android:canRetrieveWindowContent="false"
     android:description="@string/focus_accessibility_description"
     android:isAccessibilityTool="false"
-    android:notificationTimeout="200" />
+    android:notificationTimeout="100" />
