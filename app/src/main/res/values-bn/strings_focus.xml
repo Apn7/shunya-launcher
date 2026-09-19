@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- ফোকাস ও ভালো থাকা। -->
 <resources>
     <string name="focus_accessibility_label">শূন্য ফোকাস</string>
     <string name="focus_accessibility_description">হোমে ডাবল-ট্যাপ করলে শূন্য স্ক্রিন লক করতে পারে, আর ফোকাসের সময় ব্লক করা অ্যাপ খুললে বিরতির স্ক্রিন দেখাতে পারে। শূন্য শুধু দেখে কোন অ্যাপ সামনে আছে, স্ক্রিনে কী আছে তা কখনো নয়। কিছুই আপনার ফোনের বাইরে যায় না।</string>
+
+    <string name="focus_gate_pause_title">%1$s খুলবেন?</string>
+    <string name="focus_gate_breathe">ধীরে একটা শ্বাস নিন।</string>
+    <string name="focus_gate_usage_line">আজ %1$s · %2$d বার খোলা হয়েছে</string>
+    <string name="focus_gate_not_opened_today">আজ এখনো খোলা হয়নি</string>
+    <string name="focus_gate_countdown">%1$d</string>
+    <string name="focus_gate_app_fallback">এই অ্যাপ</string>
+
+    <string name="focus_gate_limit_title">%2$s-এর জন্য আজকের %1$s শেষ</string>
+    <string name="focus_gate_limit_used">আজ %1$s ব্যবহার করেছেন।</string>
+    <string name="focus_gate_limit_extend">আরও %1$d মিনিট</string>
+    <string name="focus_gate_limit_extended">আজকের বাড়তি সময় নেওয়া হয়ে গেছে।</string>
+    <string name="focus_gate_limit_tomorrow">কাল আবার নতুন করে শুরু হবে।</string>
+
+    <string name="focus_gate_blocked_title">ফোকাস চলছে, %1$s এখন বন্ধ</string>
+    <string name="focus_gate_blocked_title_schedule">%2$s চলছে, %1$s এখন বন্ধ</string>
+    <string name="focus_gate_blocked_until">%1$s পর্যন্ত · আর %2$s</string>
+    <string name="focus_gate_blocked_open_ended">আপনি শেষ না করা পর্যন্ত ফোকাস চলবে।</string>
+    <string name="focus_gate_hold_end_focus">ফোকাস শেষ করতে চেপে ধরে রাখুন</string>
+    <string name="focus_gate_hold_open_once">একবার খুলতে চেপে ধরে রাখুন</string>
+    <string name="focus_gate_hold_hint">%1$d সেকেন্ড চেপে ধরে রাখুন</string>
+    <string name="focus_gate_hold_description">%1$s। %2$d সেকেন্ড ছুঁয়ে ধরে রাখুন।</string>
 </resources>

@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Prefix: focus_ -->
+<!-- Focus & wellbeing. Prefix: focus_ -->
 <resources>
     <string name="focus_accessibility_label">Shunya focus</string>
     <string name="focus_accessibility_description">Lets Shunya lock the screen when you double-tap home, and show the pause screen when a blocked app opens during focus. Shunya only sees which app is in front, never what is on the screen. Nothing leaves your phone.</string>
+
+    <!-- Gate: mindful pause -->
+    <string name="focus_gate_pause_title">Open %1$s?</string>
+    <string name="focus_gate_breathe">Take a slow breath.</string>
+    <string name="focus_gate_usage_line">%1$s today · opened %2$d×</string>
+    <string name="focus_gate_not_opened_today">Not opened yet today</string>
+    <string name="focus_gate_countdown">%1$d</string>
+    <string name="focus_gate_app_fallback">this app</string>
+
+    <!-- Gate: daily limit -->
+    <string name="focus_gate_limit_title">You\'ve reached your %1$s for %2$s</string>
+    <string name="focus_gate_limit_used">Used %1$s today.</string>
+    <string name="focus_gate_limit_extend">%1$d more minutes</string>
+    <string name="focus_gate_limit_extended">You\'ve already taken your extra minutes today.</string>
+    <string name="focus_gate_limit_tomorrow">The limit starts fresh tomorrow.</string>
+
+    <!-- Gate: blocked during focus -->
+    <string name="focus_gate_blocked_title">%1$s is paused during focus</string>
+    <string name="focus_gate_blocked_title_schedule">%1$s is paused during %2$s</string>
+    <string name="focus_gate_blocked_until">Until %1$s · %2$s left</string>
+    <string name="focus_gate_blocked_open_ended">Focus stays on until you end it.</string>
+    <string name="focus_gate_hold_end_focus">Hold to end focus</string>
+    <string name="focus_gate_hold_open_once">Hold to open once</string>
+    <string name="focus_gate_hold_hint">Keep holding for %1$d seconds</string>
+    <string name="focus_gate_hold_description">%1$s. Touch and hold for %2$d seconds.</string>
 </resources>
