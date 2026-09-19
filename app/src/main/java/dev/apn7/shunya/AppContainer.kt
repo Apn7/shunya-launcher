@@ -91,7 +91,13 @@ class AppContainer(context: Context, val appScope: CoroutineScope) {
         )
     }
 
-    val launchPolicy: LaunchPolicy by lazy { FocusLaunchPolicy() }
+    val launchPolicy: LaunchPolicy by lazy {
+        FocusLaunchPolicy(
+            configRepository = focusConfigRepository,
+            usageRepository = usageRepository,
+            focusNow = { focusSessionController.statusNow() },
+        )
+    }
 
     val focusController: FocusController by lazy { focusSessionController }
 
