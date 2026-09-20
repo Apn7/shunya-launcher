@@ -26,7 +26,6 @@ import kotlinx.coroutines.launch
  *    blocked (focus) or over its daily limit comes to the front from anywhere, the gate opens.
  *
  * It only looks at which app a window-state change belongs to (`canRetrieveWindowContent` is false).
- * While connected it also keeps the focus status evaluated, so schedules switch grayscale on time.
  */
 class ShunyaAccessibilityService : AccessibilityService() {
 
@@ -40,8 +39,6 @@ class ShunyaAccessibilityService : AccessibilityService() {
         super.onServiceConnected()
         ScreenLockBridge.register { action -> performGlobalAction(action) }
         filter = ForegroundFilter(this)
-        val focusStatus = applicationContext.appContainer.focusController.status
-        scope.launch { focusStatus.collect { } }
     }
 
     override fun onAccessibilityEvent(event: AccessibilityEvent?) {

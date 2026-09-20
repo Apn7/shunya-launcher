@@ -21,11 +21,14 @@ import java.time.ZoneId
 
 /**
  * [FocusController] over [FocusConfigRepository]. The session lives in the stored config (so it
- * survives restarts); schedules are evaluated on demand against the local clock.
+ * survives restarts); schedules are evaluated on demand against the local clock (no alarms).
  *
- * [status] re-evaluates whenever the config changes and on a ticker that wakes at the next minute
- * boundary (when schedules can start or end) or at the session end, only while someone collects it.
- * [onScheduleGrayscale] is told when "grayscale during this schedule" should start (true) or stop.
+ * [status] re-evaluates whenever the config changes and on an in-process ticker that wakes at the
+ * next minute boundary (when schedules can start or end) or at the session end. It is shared
+ * eagerly, so its value is never stale when a screen starts collecting again, and schedule
+ * grayscale follows the clock while Shunya's process runs. The ticker holds no wake lock: while the
+ * phone sleeps it simply waits. [onScheduleGrayscale] is told when "grayscale during this schedule"
+ * should start (true) or stop.
  */
 class FocusSessionController(
     private val configRepository: FocusConfigRepository,
@@ -37,7 +40,7 @@ class FocusSessionController(
     private var lastGrayscaleWanted: Boolean? = null
 
     override val status: StateFlow<FocusStatus> = statusUpdates()
-        .stateIn(scope, SharingStarted.WhileSubscribed(STOP_TIMEOUT_MILLIS), statusNow())
+        .stateIn(scope, SharingStarted.Eagerly, statusNow())
 
     /** Focus state right now, computed on demand (does not depend on anyone collecting [status]). */
     fun statusNow(): FocusStatus = FocusEvaluator.status(configRepository.config.value, System.currentTimeMillis(), ZoneId.systemDefault())
@@ -99,6 +102,5 @@ class FocusSessionController(
     private companion object {
         const val MINUTE_MILLIS = 60_000L
         const val TICK_SLACK_MILLIS = 50L
-        const val STOP_TIMEOUT_MILLIS = 5_000L
     }
 }

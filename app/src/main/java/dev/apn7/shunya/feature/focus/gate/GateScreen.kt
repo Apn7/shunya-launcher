@@ -65,7 +65,7 @@ internal fun GateRoute(request: GateRequest, actions: GateActions) {
     val container = LocalAppContainer.current
     val scope = rememberCoroutineScope()
     var decisionVersion: Int by remember { mutableIntStateOf(0) }
-    val decision: LaunchDecision? by produceState<LaunchDecision?>(initialValue = null, request, decisionVersion) {
+    val decision: LaunchDecision? by produceState<LaunchDecision?>(null, request, decisionVersion) {
         value = container.launchPolicy.decide(request.app)
     }
     val hasUsage: Boolean = remember { container.usageRepository.hasAccess() }
