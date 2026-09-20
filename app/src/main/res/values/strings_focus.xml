@@ -1,6 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Prefix: focus_ -->
+<!-- Focus & wellbeing. Prefix: focus_ -->
 <resources>
     <string name="focus_accessibility_label">Shunya focus</string>
     <string name="focus_accessibility_description">Lets Shunya lock the screen when you double-tap home, and show the pause screen when a blocked app opens during focus. Shunya only sees which app is in front, never what is on the screen. Nothing leaves your phone.</string>
+
+    <!-- Gate: mindful pause -->
+    <string name="focus_gate_pause_title">Open %1$s?</string>
+    <string name="focus_gate_breathe">Take a slow breath.</string>
+    <string name="focus_gate_usage_line">%1$s today · opened %2$d×</string>
+    <string name="focus_gate_not_opened_today">Not opened yet today</string>
+    <string name="focus_gate_countdown">%1$d</string>
+    <string name="focus_gate_app_fallback">this app</string>
+
+    <!-- Gate: daily limit -->
+    <string name="focus_gate_limit_title">You\'ve reached your %1$s for %2$s</string>
+    <string name="focus_gate_limit_used">Used %1$s today.</string>
+    <string name="focus_gate_limit_extend">%1$d more minutes</string>
+    <string name="focus_gate_limit_extended">You\'ve already taken your extra minutes today.</string>
+    <string name="focus_gate_limit_tomorrow">The limit starts fresh tomorrow.</string>
+
+    <!-- Gate: blocked during focus -->
+    <string name="focus_gate_blocked_title">%1$s is paused during focus</string>
+    <string name="focus_gate_blocked_title_schedule">%1$s is paused during %2$s</string>
+    <string name="focus_gate_blocked_until">Until %1$s · %2$s left</string>
+    <string name="focus_gate_blocked_open_ended">Focus stays on until you end it.</string>
+    <string name="focus_gate_hold_end_focus">Hold to end focus</string>
+    <string name="focus_gate_hold_open_once">Hold to open once</string>
+    <string name="focus_gate_hold_hint">Keep holding for %1$d seconds</string>
+    <string name="focus_gate_hold_description">%1$s. Touch and hold for %2$d seconds.</string>
+
+    <!-- Accessibility disclosure -->
+    <string name="focus_a11y_title">Accessibility service</string>
+    <string name="focus_a11y_status_on">The service is on.</string>
+    <string name="focus_a11y_status_off">The service is off.</string>
+    <string name="focus_a11y_intro">Shunya can use Android\'s accessibility service for two things. It stays off until you turn it on, and you can turn it off at any time.</string>
+    <string name="focus_a11y_does_header">What it does</string>
+    <string name="focus_a11y_does_lock">Locks the screen when you double-tap the home screen (Android 9 and newer).</string>
+    <string name="focus_a11y_does_block">With system-wide blocking, shows the pause screen when a blocked app opens from anywhere: notifications, recent apps or links.</string>
+    <string name="focus_a11y_sees_header">What Shunya sees</string>
+    <string name="focus_a11y_sees_body">Only which app comes to the front, at the moment it does. That is checked against your focus rules and then forgotten.</string>
+    <string name="focus_a11y_never_header">What Shunya never does</string>
+    <string name="focus_a11y_never_read">It never reads what is on your screen or what you type.</string>
+    <string name="focus_a11y_never_store">It never records, keeps or shares anything. Shunya has no internet permission.</string>
+    <string name="focus_a11y_never_act">It never taps, types or changes anything in other apps.</string>
+    <string name="focus_a11y_control_header">You stay in control</string>
+    <string name="focus_a11y_without">Without the service, focus rules only apply to apps you open from Shunya.</string>
+    <string name="focus_a11y_steps">In settings, choose “%1$s” and turn it on.</string>
+    <string name="focus_a11y_agree">Agree and open settings</string>
+    <string name="focus_a11y_manage">Open accessibility settings</string>
+
+    <!-- Grayscale setup -->
+    <string name="focus_grayscale_title">Grayscale</string>
+    <string name="focus_grayscale_switch_summary">Show the whole screen in black and white. Colour makes apps more tempting.</string>
+    <string name="focus_grayscale_ready">Ready: Shunya can turn grayscale on and off.</string>
+    <string name="focus_grayscale_needs_setup">Needs a one-time setup from a computer.</string>
+    <string name="focus_grayscale_setup_header">One-time setup</string>
+    <string name="focus_grayscale_step_1">1. On this phone, turn on Developer options and USB debugging.</string>
+    <string name="focus_grayscale_step_2">2. Connect the phone to a computer that has ADB (Android platform-tools) and run:</string>
+    <string name="focus_grayscale_step_3">3. Come back here. The switch above works from then on.</string>
+    <string name="focus_grayscale_why">Android lets an app change the colour mode only with this permission, and it can only be given over USB. It stays until you uninstall Shunya.</string>
+    <string name="focus_grayscale_colour_note">Grayscale uses Android\'s colour correction. If you already use colour correction, your own setting comes back when grayscale is turned off.</string>
+    <string name="focus_grayscale_clip_label">ADB command</string>
+
+    <!-- Focus hub -->
+    <string name="focus_hub_title">Focus</string>
+    <string name="focus_hub_now_header">Focus now</string>
+    <string name="focus_hub_now_summary">Distracting apps stay closed while focus is on.</string>
+    <string name="focus_hub_until_stop">Until I stop</string>
+    <string name="focus_hub_active_left">Focus · %1$s left</string>
+    <string name="focus_hub_active_open">Focus is on</string>
+    <string name="focus_hub_active_until">Until %1$s</string>
+    <string name="focus_hub_active_until_stop">Until you end it</string>
+    <string name="focus_hub_schedule_on">%1$s is on</string>
+    <string name="focus_hub_schedule_note">Schedules end on their own. To change one, open Schedules.</string>
+    <string name="focus_hub_end">End focus</string>
+    <string name="focus_hub_rules_header">Rules</string>
+    <string name="focus_hub_distracting_summary">A mindful pause before they open</string>
+    <string name="focus_hub_limits_summary">Minutes per day for the apps you choose</string>
+    <string name="focus_hub_schedules_summary">Focus that starts on its own, like bedtime</string>
+    <string name="focus_hub_count_on">%1$d on</string>
+    <string name="focus_hub_wellbeing_header">Wellbeing</string>
+    <string name="focus_hub_screentime_summary">Today and the last 7 days</string>
+    <string name="focus_hub_set_up">Set up</string>
+    <string name="focus_hub_blocking_header">Where rules apply</string>
+    <string name="focus_hub_needs_service">System-wide blocking needs the accessibility service. Until it is on, rules apply only to apps opened from Shunya.</string>
+    <string name="focus_distracting_title">Distracting apps</string>
+    <string name="focus_limits_title">Daily limits</string>
+    <string name="focus_schedules_title">Schedules</string>
+    <string name="focus_screentime_title">Screen time</string>
+    <string name="focus_schedule_default_name">Focus time</string>
+    <string name="focus_blocking_mode">Blocking</string>
+    <string name="focus_blocking_summary">Everywhere also catches apps opened from notifications or recent apps.</string>
+    <string name="focus_blocking_launcher_only">Only apps opened from Shunya</string>
+    <string name="focus_blocking_system_wide">Everywhere</string>
+    <string name="focus_usage_access_title">Usage access</string>
+    <string name="focus_usage_access_description">Daily limits and screen time need to know how long you use each app. It stays on your phone.</string>
+    <plurals name="focus_minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <plurals name="focus_apps_count">
+        <item quantity="one">%d app</item>
+        <item quantity="other">%d apps</item>
+    </plurals>
+
+    <!-- Distracting apps -->
+    <string name="focus_distracting_intro">These apps get a mindful pause before they open, and stay closed during focus and schedules.</string>
+    <string name="focus_pause_length">Pause length</string>
+    <string name="focus_seconds_value">%1$d s</string>
+    <string name="focus_search_apps">Search apps</string>
+    <string name="focus_no_matches">No apps match</string>
+    <plurals name="focus_chosen_count">
+        <item quantity="one">%d chosen</item>
+        <item quantity="other">%d chosen</item>
+    </plurals>
+
+    <!-- Daily limits -->
+    <string name="focus_limits_intro">When an app reaches its daily limit, Shunya asks before opening it. You can take %1$d more minutes once a day.</string>
+    <string name="focus_limits_empty_title">No daily limits yet</string>
+    <string name="focus_limits_empty_message">Add one for an app that takes more of your day than you want.</string>
+    <string name="focus_limit_per_day">%1$s a day</string>
+    <string name="focus_limit_used_today">%1$s used today</string>
+    <string name="focus_limit_sheet_title">Daily limit for %1$s</string>
+    <string name="focus_limit_current">Current</string>
+    <string name="focus_limit_remove">Remove limit</string>
+    <string name="focus_limit_pick_title">Choose an app</string>
+    <string name="focus_limit_none">No limit</string>
+
+    <!-- Schedules -->
+    <string name="focus_schedules_intro">Schedules turn focus on by themselves at set times. While one is on, distracting apps stay closed.</string>
+    <string name="focus_schedules_empty_title">No schedules yet</string>
+    <string name="focus_schedules_empty_message">Start with an example and change it later, or add your own.</string>
+    <string name="focus_schedules_examples">Examples</string>
+    <string name="focus_schedule_preset_bedtime">Bedtime</string>
+    <string name="focus_schedule_preset_work">Work</string>
+    <string name="focus_schedule_active">Active now</string>
+    <string name="focus_schedule_summary">%1$s · %2$s</string>
+    <string name="focus_time_range">%1$s–%2$s</string>
+    <string name="focus_days_every_day">Every day</string>
+    <string name="focus_days_none">No days</string>
+    <string name="focus_schedule_new">New schedule</string>
+    <string name="focus_schedule_edit">Edit schedule</string>
+    <string name="focus_schedule_name">Name</string>
+    <string name="focus_schedule_days">Days</string>
+    <string name="focus_schedule_days_needed">Choose at least one day.</string>
+    <string name="focus_schedule_time">Time</string>
+    <string name="focus_schedule_starts">Starts</string>
+    <string name="focus_schedule_ends">Ends</string>
+    <string name="focus_schedule_next_day">%1$s, next day</string>
+    <string name="focus_schedule_options">Options</string>
+    <string name="focus_schedule_enabled">Schedule on</string>
+    <string name="focus_schedule_grayscale">Grayscale during this schedule</string>
+    <string name="focus_schedule_grayscale_summary">The screen turns black and white while it runs.</string>
+    <string name="focus_schedule_grayscale_setup">Works after the one-time grayscale setup.</string>
+    <string name="focus_schedule_grayscale_link">Set up grayscale</string>
+    <string name="focus_schedule_delete">Delete schedule</string>
+    <string name="focus_schedule_delete_title">Delete this schedule?</string>
+    <string name="focus_schedule_delete_message">“%1$s” will be removed.</string>
+    <string name="focus_schedule_pick_start">Start time</string>
+    <string name="focus_schedule_pick_end">End time</string>
 </resources>

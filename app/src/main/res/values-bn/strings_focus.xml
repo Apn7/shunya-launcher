@@ -1,5 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- ফোকাস ও ভালো থাকা। -->
 <resources>
     <string name="focus_accessibility_label">শূন্য ফোকাস</string>
     <string name="focus_accessibility_description">হোমে ডাবল-ট্যাপ করলে শূন্য স্ক্রিন লক করতে পারে, আর ফোকাসের সময় ব্লক করা অ্যাপ খুললে বিরতির স্ক্রিন দেখাতে পারে। শূন্য শুধু দেখে কোন অ্যাপ সামনে আছে, স্ক্রিনে কী আছে তা কখনো নয়। কিছুই আপনার ফোনের বাইরে যায় না।</string>
+
+    <string name="focus_gate_pause_title">%1$s খুলবেন?</string>
+    <string name="focus_gate_breathe">ধীরে একটা শ্বাস নিন।</string>
+    <string name="focus_gate_usage_line">আজ %1$s · %2$d বার খোলা হয়েছে</string>
+    <string name="focus_gate_not_opened_today">আজ এখনো খোলা হয়নি</string>
+    <string name="focus_gate_countdown">%1$d</string>
+    <string name="focus_gate_app_fallback">এই অ্যাপ</string>
+
+    <string name="focus_gate_limit_title">%2$s-এর জন্য আজকের %1$s শেষ</string>
+    <string name="focus_gate_limit_used">আজ %1$s ব্যবহার করেছেন।</string>
+    <string name="focus_gate_limit_extend">আরও %1$d মিনিট</string>
+    <string name="focus_gate_limit_extended">আজকের বাড়তি সময় নেওয়া হয়ে গেছে।</string>
+    <string name="focus_gate_limit_tomorrow">কাল আবার নতুন করে শুরু হবে।</string>
+
+    <string name="focus_gate_blocked_title">ফোকাস চলছে, %1$s এখন বন্ধ</string>
+    <string name="focus_gate_blocked_title_schedule">%2$s চলছে, %1$s এখন বন্ধ</string>
+    <string name="focus_gate_blocked_until">%1$s পর্যন্ত · আর %2$s</string>
+    <string name="focus_gate_blocked_open_ended">আপনি শেষ না করা পর্যন্ত ফোকাস চলবে।</string>
+    <string name="focus_gate_hold_end_focus">ফোকাস শেষ করতে চেপে ধরে রাখুন</string>
+    <string name="focus_gate_hold_open_once">একবার খুলতে চেপে ধরে রাখুন</string>
+    <string name="focus_gate_hold_hint">%1$d সেকেন্ড চেপে ধরে রাখুন</string>
+    <string name="focus_gate_hold_description">%1$s। %2$d সেকেন্ড ছুঁয়ে ধরে রাখুন।</string>
+
+    <string name="focus_a11y_title">অ্যাক্সেসিবিলিটি সার্ভিস</string>
+    <string name="focus_a11y_status_on">সার্ভিস চালু আছে।</string>
+    <string name="focus_a11y_status_off">সার্ভিস বন্ধ আছে।</string>
+    <string name="focus_a11y_intro">শূন্য দুটি কাজের জন্য অ্যান্ড্রয়েডের অ্যাক্সেসিবিলিটি সার্ভিস ব্যবহার করতে পারে। আপনি চালু না করা পর্যন্ত এটি বন্ধ থাকে, আর যেকোনো সময় বন্ধ করতে পারেন।</string>
+    <string name="focus_a11y_does_header">এটি কী করে</string>
+    <string name="focus_a11y_does_lock">হোম স্ক্রিনে ডাবল-ট্যাপ করলে স্ক্রিন লক করে (অ্যান্ড্রয়েড ৯ ও নতুন)।</string>
+    <string name="focus_a11y_does_block">সিস্টেম-জুড়ে ব্লকিং চালু থাকলে, ব্লক করা অ্যাপ যেখান থেকেই খুলুক (নোটিফিকেশন, সাম্প্রতিক অ্যাপ বা লিংক), বিরতির স্ক্রিন দেখায়।</string>
+    <string name="focus_a11y_sees_header">শূন্য কী দেখে</string>
+    <string name="focus_a11y_sees_body">শুধু কোন অ্যাপ সামনে এল, ঠিক সেই মুহূর্তে। সেটা আপনার ফোকাসের নিয়মের সাথে মিলিয়ে দেখা হয়, তারপর ভুলে যাওয়া হয়।</string>
+    <string name="focus_a11y_never_header">শূন্য যা কখনো করে না</string>
+    <string name="focus_a11y_never_read">স্ক্রিনে কী আছে বা আপনি কী লিখছেন, তা কখনো পড়ে না।</string>
+    <string name="focus_a11y_never_store">কিছুই রেকর্ড, জমা বা শেয়ার করে না। শূন্যের ইন্টারনেটের অনুমতিই নেই।</string>
+    <string name="focus_a11y_never_act">অন্য অ্যাপে কখনো ট্যাপ, টাইপ বা কিছু বদলায় না।</string>
+    <string name="focus_a11y_control_header">নিয়ন্ত্রণ আপনার হাতে</string>
+    <string name="focus_a11y_without">সার্ভিস ছাড়া ফোকাসের নিয়ম শুধু শূন্য থেকে খোলা অ্যাপে কাজ করে।</string>
+    <string name="focus_a11y_steps">সেটিংসে “%1$s” বেছে নিয়ে চালু করুন।</string>
+    <string name="focus_a11y_agree">রাজি, সেটিংস খুলুন</string>
+    <string name="focus_a11y_manage">অ্যাক্সেসিবিলিটি সেটিংস খুলুন</string>
+
+    <string name="focus_grayscale_title">গ্রেস্কেল</string>
+    <string name="focus_grayscale_switch_summary">পুরো স্ক্রিন সাদা-কালো দেখাবে। রঙিন অ্যাপ বেশি টানে।</string>
+    <string name="focus_grayscale_ready">প্রস্তুত: শূন্য গ্রেস্কেল চালু-বন্ধ করতে পারে।</string>
+    <string name="focus_grayscale_needs_setup">একবার কম্পিউটার থেকে সেটআপ করতে হবে।</string>
+    <string name="focus_grayscale_setup_header">একবারের সেটআপ</string>
+    <string name="focus_grayscale_step_1">১. এই ফোনে ডেভেলপার অপশন আর USB ডিবাগিং চালু করুন।</string>
+    <string name="focus_grayscale_step_2">২. ADB (অ্যান্ড্রয়েড platform-tools) আছে এমন কম্পিউটারে ফোনটি যুক্ত করে চালান:</string>
+    <string name="focus_grayscale_step_3">৩. এখানে ফিরে আসুন। এরপর থেকে ওপরের সুইচটি কাজ করবে।</string>
+    <string name="focus_grayscale_why">এই অনুমতি ছাড়া অ্যান্ড্রয়েড কোনো অ্যাপকে রঙের মোড বদলাতে দেয় না, আর এটি শুধু USB দিয়েই দেওয়া যায়। শূন্য আনইনস্টল না করা পর্যন্ত এটি থাকে।</string>
+    <string name="focus_grayscale_colour_note">গ্রেস্কেল অ্যান্ড্রয়েডের কালার কারেকশন ব্যবহার করে। আপনি আগে থেকেই কালার কারেকশন ব্যবহার করলে, গ্রেস্কেল বন্ধ করলে আপনার নিজের সেটিং ফিরে আসবে।</string>
+    <string name="focus_grayscale_clip_label">ADB কমান্ড</string>
+
+    <string name="focus_hub_title">ফোকাস</string>
+    <string name="focus_hub_now_header">এখনই ফোকাস</string>
+    <string name="focus_hub_now_summary">ফোকাস চলার সময় মনোযোগ কাড়া অ্যাপগুলো বন্ধ থাকে।</string>
+    <string name="focus_hub_until_stop">যতক্ষণ না থামাই</string>
+    <string name="focus_hub_active_left">ফোকাস · আর %1$s</string>
+    <string name="focus_hub_active_open">ফোকাস চালু</string>
+    <string name="focus_hub_active_until">%1$s পর্যন্ত</string>
+    <string name="focus_hub_active_until_stop">আপনি শেষ না করা পর্যন্ত</string>
+    <string name="focus_hub_schedule_on">%1$s চলছে</string>
+    <string name="focus_hub_schedule_note">শিডিউল নিজে থেকেই শেষ হয়। বদলাতে শিডিউলে যান।</string>
+    <string name="focus_hub_end">ফোকাস শেষ করুন</string>
+    <string name="focus_hub_rules_header">নিয়ম</string>
+    <string name="focus_hub_distracting_summary">খোলার আগে একটু থামা</string>
+    <string name="focus_hub_limits_summary">বাছাই করা অ্যাপের জন্য দিনে কত মিনিট</string>
+    <string name="focus_hub_schedules_summary">নিজে থেকে শুরু হওয়া ফোকাস, যেমন ঘুমের সময়</string>
+    <string name="focus_hub_count_on">%1$dটি চালু</string>
+    <string name="focus_hub_wellbeing_header">ভালো থাকা</string>
+    <string name="focus_hub_screentime_summary">আজ ও গত ৭ দিন</string>
+    <string name="focus_hub_set_up">সেটআপ করুন</string>
+    <string name="focus_hub_blocking_header">নিয়ম কোথায় খাটবে</string>
+    <string name="focus_hub_needs_service">সিস্টেম-জুড়ে ব্লকিংয়ের জন্য অ্যাক্সেসিবিলিটি সার্ভিস লাগবে। চালু না হওয়া পর্যন্ত নিয়ম শুধু শূন্য থেকে খোলা অ্যাপে খাটবে।</string>
+    <string name="focus_distracting_title">মনোযোগ কাড়া অ্যাপ</string>
+    <string name="focus_limits_title">দৈনিক সীমা</string>
+    <string name="focus_schedules_title">শিডিউল</string>
+    <string name="focus_screentime_title">স্ক্রিন টাইম</string>
+    <string name="focus_schedule_default_name">ফোকাসের সময়</string>
+    <string name="focus_blocking_mode">ব্লকিং</string>
+    <string name="focus_blocking_summary">সব জায়গায় বেছে নিলে নোটিফিকেশন বা সাম্প্রতিক অ্যাপ থেকে খোলা অ্যাপেও খাটবে।</string>
+    <string name="focus_blocking_launcher_only">শুধু শূন্য থেকে খোলা অ্যাপে</string>
+    <string name="focus_blocking_system_wide">সব জায়গায়</string>
+    <string name="focus_usage_access_title">ব্যবহারের তথ্য</string>
+    <string name="focus_usage_access_description">দৈনিক সীমা আর স্ক্রিন টাইমের জন্য জানতে হয় কোন অ্যাপ কতক্ষণ ব্যবহার করছেন। এই তথ্য আপনার ফোনেই থাকে।</string>
+    <plurals name="focus_minutes">
+        <item quantity="other">%d মিনিট</item>
+    </plurals>
+    <plurals name="focus_apps_count">
+        <item quantity="other">%dটি অ্যাপ</item>
+    </plurals>
+
+    <string name="focus_distracting_intro">এই অ্যাপগুলো খোলার আগে একটু থামতে হয়, আর ফোকাস ও শিডিউলের সময় এগুলো বন্ধ থাকে।</string>
+    <string name="focus_pause_length">থামার সময়</string>
+    <string name="focus_seconds_value">%1$d সেকেন্ড</string>
+    <string name="focus_search_apps">অ্যাপ খুঁজুন</string>
+    <string name="focus_no_matches">মেলে এমন কোনো অ্যাপ নেই</string>
+    <plurals name="focus_chosen_count">
+        <item quantity="other">%dটি বাছাই করা</item>
+    </plurals>
+
+    <string name="focus_limits_intro">কোনো অ্যাপের দৈনিক সীমা শেষ হলে খোলার আগে শূন্য জিজ্ঞেস করে। দিনে একবার আরও %1$d মিনিট নিতে পারেন।</string>
+    <string name="focus_limits_empty_title">এখনো কোনো দৈনিক সীমা নেই</string>
+    <string name="focus_limits_empty_message">যে অ্যাপ আপনার দিনের বেশি সময় নিয়ে নেয়, তার জন্য একটি সীমা দিন।</string>
+    <string name="focus_limit_per_day">দিনে %1$s</string>
+    <string name="focus_limit_used_today">আজ %1$s ব্যবহার হয়েছে</string>
+    <string name="focus_limit_sheet_title">%1$s-এর দৈনিক সীমা</string>
+    <string name="focus_limit_current">এখন এটি</string>
+    <string name="focus_limit_remove">সীমা সরান</string>
+    <string name="focus_limit_pick_title">একটি অ্যাপ বেছে নিন</string>
+    <string name="focus_limit_none">সীমা নেই</string>
+
+    <string name="focus_schedules_intro">শিডিউল ঠিক করা সময়ে নিজে থেকেই ফোকাস চালু করে। চালু থাকার সময় মনোযোগ কাড়া অ্যাপ বন্ধ থাকে।</string>
+    <string name="focus_schedules_empty_title">এখনো কোনো শিডিউল নেই</string>
+    <string name="focus_schedules_empty_message">একটি উদাহরণ দিয়ে শুরু করে পরে বদলে নিন, অথবা নিজের মতো যোগ করুন।</string>
+    <string name="focus_schedules_examples">উদাহরণ</string>
+    <string name="focus_schedule_preset_bedtime">ঘুমের সময়</string>
+    <string name="focus_schedule_preset_work">কাজের সময়</string>
+    <string name="focus_schedule_active">এখন চলছে</string>
+    <string name="focus_schedule_summary">%1$s · %2$s</string>
+    <string name="focus_time_range">%1$s–%2$s</string>
+    <string name="focus_days_every_day">প্রতিদিন</string>
+    <string name="focus_days_none">কোনো দিন নয়</string>
+    <string name="focus_schedule_new">নতুন শিডিউল</string>
+    <string name="focus_schedule_edit">শিডিউল বদলান</string>
+    <string name="focus_schedule_name">নাম</string>
+    <string name="focus_schedule_days">দিন</string>
+    <string name="focus_schedule_days_needed">অন্তত একটি দিন বেছে নিন।</string>
+    <string name="focus_schedule_time">সময়</string>
+    <string name="focus_schedule_starts">শুরু</string>
+    <string name="focus_schedule_ends">শেষ</string>
+    <string name="focus_schedule_next_day">পরদিন %1$s</string>
+    <string name="focus_schedule_options">অন্যান্য</string>
+    <string name="focus_schedule_enabled">শিডিউল চালু</string>
+    <string name="focus_schedule_grayscale">এই সময়ে গ্রেস্কেল</string>
+    <string name="focus_schedule_grayscale_summary">চলার সময় স্ক্রিন সাদা-কালো হয়ে যাবে।</string>
+    <string name="focus_schedule_grayscale_setup">গ্রেস্কেলের একবারের সেটআপের পর কাজ করবে।</string>
+    <string name="focus_schedule_grayscale_link">গ্রেস্কেল সেটআপ করুন</string>
+    <string name="focus_schedule_delete">শিডিউল মুছুন</string>
+    <string name="focus_schedule_delete_title">শিডিউলটি মুছবেন?</string>
+    <string name="focus_schedule_delete_message">“%1$s” মুছে যাবে।</string>
+    <string name="focus_schedule_pick_start">শুরুর সময়</string>
+    <string name="focus_schedule_pick_end">শেষের সময়</string>
 </resources>
