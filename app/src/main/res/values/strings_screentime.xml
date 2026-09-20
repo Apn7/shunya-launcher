@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Screen time screens. Prefix: focus_ -->
+<resources>
+    <string name="focus_screentime_today">Today</string>
+    <string name="focus_screentime_week">Last 7 days</string>
+    <string name="focus_screentime_by_app">Today by app</string>
+    <string name="focus_screentime_empty">No screen time yet today</string>
+    <string name="focus_screentime_average">Daily average %1$s</string>
+    <string name="focus_screentime_privacy">Usage is read only on this phone and never leaves it.</string>
+    <plurals name="focus_unlocks_today">
+        <item quantity="one">Unlocked once today</item>
+        <item quantity="other">Unlocked %d times today</item>
+    </plurals>
+    <plurals name="focus_opens">
+        <item quantity="one">Opened once</item>
+        <item quantity="other">Opened %d times</item>
+    </plurals>
+
+    <string name="focus_detail_week_total">Last 7 days: %1$s</string>
+    <string name="focus_detail_hours">Today by hour</string>
+    <string name="focus_detail_actions">Rules for this app</string>
+    <string name="focus_detail_distracting">Mindful pause</string>
+    <string name="focus_detail_distracting_summary">Treat it as distracting: a pause before it opens, closed during focus.</string>
+    <string name="focus_detail_limit">Daily limit</string>
+    <string name="focus_detail_app_info">App info</string>
+</resources>

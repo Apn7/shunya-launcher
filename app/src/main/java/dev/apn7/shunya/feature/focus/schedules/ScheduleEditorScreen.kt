@@ -27,6 +27,8 @@ import dev.apn7.shunya.core.designsystem.theme.ShunyaTheme
 import dev.apn7.shunya.core.designsystem.theme.Spacing
 import dev.apn7.shunya.feature.focus.logic.DayRanges
 import dev.apn7.shunya.feature.focus.ui.Paragraph
+import dev.apn7.shunya.feature.focus.ui.currentLocale
+import dev.apn7.shunya.feature.focus.ui.firstDayOfWeek
 import dev.apn7.shunya.feature.focus.ui.minuteOfDayText
 
 private enum class TimeField { Start, End }

@@ -5,8 +5,13 @@ import android.text.format.DateFormat
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.produceState
+import androidx.compose.ui.platform.LocalConfiguration
 import kotlinx.coroutines.delay
+import java.time.DayOfWeek
+import java.time.format.TextStyle
+import java.time.temporal.WeekFields
 import java.util.Date
+import java.util.Locale
 import java.util.TimeZone
 
 /** The current time, refreshed every [periodMillis] while in composition (for "23m left" lines). */
@@ -35,3 +40,18 @@ fun minuteOfDayText(context: Context, minuteOfDay: Int): String {
 }
 
 private const val MINUTES_PER_DAY = 1440
+
+/** The UI language's locale (follows Shunya's own language setting, not only the phone's). */
+@Composable
+fun currentLocale(): Locale {
+    val locales = LocalConfiguration.current.locales
+    val first: Locale? = if (locales.size() > 0) locales.get(0) else null
+    return first ?: Locale.getDefault()
+}
+
+/** First day of the week in [locale], as an ISO number (1 = Monday … 7 = Sunday). */
+fun firstDayOfWeek(locale: Locale): Int = WeekFields.of(locale).firstDayOfWeek.value
+
+/** Short day name such as "Sun" or "রবি". */
+fun shortDayName(isoDay: Int, locale: Locale): String =
+    DayOfWeek.of(isoDay.coerceIn(1, 7)).getDisplayName(TextStyle.SHORT, locale)

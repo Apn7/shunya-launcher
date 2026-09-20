@@ -1,33 +1,17 @@
 package dev.apn7.shunya.feature.focus.schedules
 
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import dev.apn7.shunya.R
 import dev.apn7.shunya.core.model.Schedule
 import dev.apn7.shunya.feature.focus.logic.DayRanges
+import dev.apn7.shunya.feature.focus.ui.currentLocale
+import dev.apn7.shunya.feature.focus.ui.firstDayOfWeek
 import dev.apn7.shunya.feature.focus.ui.minuteOfDayText
-import java.time.DayOfWeek
-import java.time.format.TextStyle
-import java.time.temporal.WeekFields
+import dev.apn7.shunya.feature.focus.ui.shortDayName
 import java.util.Locale
 import java.util.UUID
-
-/** The UI language's locale (follows Shunya's own language setting, not only the phone's). */
-@Composable
-internal fun currentLocale(): Locale {
-    val locales = LocalConfiguration.current.locales
-    val first: Locale? = if (locales.size() > 0) locales.get(0) else null
-    return first ?: Locale.getDefault()
-}
-
-/** First day of the week in [locale], as an ISO number (1 = Monday … 7 = Sunday). */
-internal fun firstDayOfWeek(locale: Locale): Int = WeekFields.of(locale).firstDayOfWeek.value
-
-/** Short day name such as "Sun" or "রবি". */
-internal fun shortDayName(isoDay: Int, locale: Locale): String =
-    DayOfWeek.of(isoDay.coerceIn(1, DayRanges.DAYS_PER_WEEK)).getDisplayName(TextStyle.SHORT, locale)
 
 /** "Every day", "Sun–Thu", "Fri, Sat", "Mon, Wed, Fri". */
 @Composable

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- স্ক্রিন টাইম। -->
+<resources>
+    <string name="focus_screentime_today">আজ</string>
+    <string name="focus_screentime_week">গত ৭ দিন</string>
+    <string name="focus_screentime_by_app">আজ, অ্যাপ অনুযায়ী</string>
+    <string name="focus_screentime_empty">আজ এখনো স্ক্রিন টাইম নেই</string>
+    <string name="focus_screentime_average">দৈনিক গড় %1$s</string>
+    <string name="focus_screentime_privacy">ব্যবহারের তথ্য শুধু এই ফোনেই পড়া হয়, কখনো বাইরে যায় না।</string>
+    <plurals name="focus_unlocks_today">
+        <item quantity="other">আজ %d বার আনলক করেছেন</item>
+    </plurals>
+    <plurals name="focus_opens">
+        <item quantity="other">%d বার খোলা হয়েছে</item>
+    </plurals>
+
+    <string name="focus_detail_week_total">গত ৭ দিনে: %1$s</string>
+    <string name="focus_detail_hours">আজ, ঘণ্টা অনুযায়ী</string>
+    <string name="focus_detail_actions">এই অ্যাপের নিয়ম</string>
+    <string name="focus_detail_distracting">খোলার আগে থামা</string>
+    <string name="focus_detail_distracting_summary">মনোযোগ কাড়া হিসেবে ধরুন: খোলার আগে একটু থামা, ফোকাসের সময় বন্ধ।</string>
+    <string name="focus_detail_limit">দৈনিক সীমা</string>
+    <string name="focus_detail_app_info">অ্যাপের তথ্য</string>
+</resources>

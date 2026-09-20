@@ -27,6 +27,7 @@ import dev.apn7.shunya.core.designsystem.component.ShunyaTextButton
 import dev.apn7.shunya.core.designsystem.theme.ShunyaTheme
 import dev.apn7.shunya.core.designsystem.theme.Spacing
 import dev.apn7.shunya.core.model.Schedule
+import dev.apn7.shunya.feature.focus.ui.shortDayName
 import java.util.Locale
 
 private val ChipShape = RoundedCornerShape(12.dp)
