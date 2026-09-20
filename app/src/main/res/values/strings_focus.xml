@@ -114,4 +114,16 @@
         <item quantity="one">%d chosen</item>
         <item quantity="other">%d chosen</item>
     </plurals>
+
+    <!-- Daily limits -->
+    <string name="focus_limits_intro">When an app reaches its daily limit, Shunya asks before opening it. You can take %1$d more minutes once a day.</string>
+    <string name="focus_limits_empty_title">No daily limits yet</string>
+    <string name="focus_limits_empty_message">Add one for an app that takes more of your day than you want.</string>
+    <string name="focus_limit_per_day">%1$s a day</string>
+    <string name="focus_limit_used_today">%1$s used today</string>
+    <string name="focus_limit_sheet_title">Daily limit for %1$s</string>
+    <string name="focus_limit_current">Current</string>
+    <string name="focus_limit_remove">Remove limit</string>
+    <string name="focus_limit_pick_title">Choose an app</string>
+    <string name="focus_limit_none">No limit</string>
 </resources>

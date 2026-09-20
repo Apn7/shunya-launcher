@@ -104,4 +104,15 @@
     <plurals name="focus_chosen_count">
         <item quantity="other">%dটি বাছাই করা</item>
     </plurals>
+
+    <string name="focus_limits_intro">কোনো অ্যাপের দৈনিক সীমা শেষ হলে খোলার আগে শূন্য জিজ্ঞেস করে। দিনে একবার আরও %1$d মিনিট নিতে পারেন।</string>
+    <string name="focus_limits_empty_title">এখনো কোনো দৈনিক সীমা নেই</string>
+    <string name="focus_limits_empty_message">যে অ্যাপ আপনার দিনের বেশি সময় নিয়ে নেয়, তার জন্য একটি সীমা দিন।</string>
+    <string name="focus_limit_per_day">দিনে %1$s</string>
+    <string name="focus_limit_used_today">আজ %1$s ব্যবহার হয়েছে</string>
+    <string name="focus_limit_sheet_title">%1$s-এর দৈনিক সীমা</string>
+    <string name="focus_limit_current">এখন এটি</string>
+    <string name="focus_limit_remove">সীমা সরান</string>
+    <string name="focus_limit_pick_title">একটি অ্যাপ বেছে নিন</string>
+    <string name="focus_limit_none">সীমা নেই</string>
 </resources>
