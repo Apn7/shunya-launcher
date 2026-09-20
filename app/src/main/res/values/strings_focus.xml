@@ -126,4 +126,37 @@
     <string name="focus_limit_remove">Remove limit</string>
     <string name="focus_limit_pick_title">Choose an app</string>
     <string name="focus_limit_none">No limit</string>
+
+    <!-- Schedules -->
+    <string name="focus_schedules_intro">Schedules turn focus on by themselves at set times. While one is on, distracting apps stay closed.</string>
+    <string name="focus_schedules_empty_title">No schedules yet</string>
+    <string name="focus_schedules_empty_message">Start with an example and change it later, or add your own.</string>
+    <string name="focus_schedules_examples">Examples</string>
+    <string name="focus_schedule_preset_bedtime">Bedtime</string>
+    <string name="focus_schedule_preset_work">Work</string>
+    <string name="focus_schedule_active">Active now</string>
+    <string name="focus_schedule_summary">%1$s · %2$s</string>
+    <string name="focus_time_range">%1$s–%2$s</string>
+    <string name="focus_days_every_day">Every day</string>
+    <string name="focus_days_none">No days</string>
+    <string name="focus_schedule_new">New schedule</string>
+    <string name="focus_schedule_edit">Edit schedule</string>
+    <string name="focus_schedule_name">Name</string>
+    <string name="focus_schedule_days">Days</string>
+    <string name="focus_schedule_days_needed">Choose at least one day.</string>
+    <string name="focus_schedule_time">Time</string>
+    <string name="focus_schedule_starts">Starts</string>
+    <string name="focus_schedule_ends">Ends</string>
+    <string name="focus_schedule_next_day">%1$s, next day</string>
+    <string name="focus_schedule_options">Options</string>
+    <string name="focus_schedule_enabled">Schedule on</string>
+    <string name="focus_schedule_grayscale">Grayscale during this schedule</string>
+    <string name="focus_schedule_grayscale_summary">The screen turns black and white while it runs.</string>
+    <string name="focus_schedule_grayscale_setup">Works after the one-time grayscale setup.</string>
+    <string name="focus_schedule_grayscale_link">Set up grayscale</string>
+    <string name="focus_schedule_delete">Delete schedule</string>
+    <string name="focus_schedule_delete_title">Delete this schedule?</string>
+    <string name="focus_schedule_delete_message">“%1$s” will be removed.</string>
+    <string name="focus_schedule_pick_start">Start time</string>
+    <string name="focus_schedule_pick_end">End time</string>
 </resources>

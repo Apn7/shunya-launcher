@@ -115,4 +115,36 @@
     <string name="focus_limit_remove">সীমা সরান</string>
     <string name="focus_limit_pick_title">একটি অ্যাপ বেছে নিন</string>
     <string name="focus_limit_none">সীমা নেই</string>
+
+    <string name="focus_schedules_intro">শিডিউল ঠিক করা সময়ে নিজে থেকেই ফোকাস চালু করে। চালু থাকার সময় মনোযোগ কাড়া অ্যাপ বন্ধ থাকে।</string>
+    <string name="focus_schedules_empty_title">এখনো কোনো শিডিউল নেই</string>
+    <string name="focus_schedules_empty_message">একটি উদাহরণ দিয়ে শুরু করে পরে বদলে নিন, অথবা নিজের মতো যোগ করুন।</string>
+    <string name="focus_schedules_examples">উদাহরণ</string>
+    <string name="focus_schedule_preset_bedtime">ঘুমের সময়</string>
+    <string name="focus_schedule_preset_work">কাজের সময়</string>
+    <string name="focus_schedule_active">এখন চলছে</string>
+    <string name="focus_schedule_summary">%1$s · %2$s</string>
+    <string name="focus_time_range">%1$s–%2$s</string>
+    <string name="focus_days_every_day">প্রতিদিন</string>
+    <string name="focus_days_none">কোনো দিন নয়</string>
+    <string name="focus_schedule_new">নতুন শিডিউল</string>
+    <string name="focus_schedule_edit">শিডিউল বদলান</string>
+    <string name="focus_schedule_name">নাম</string>
+    <string name="focus_schedule_days">দিন</string>
+    <string name="focus_schedule_days_needed">অন্তত একটি দিন বেছে নিন।</string>
+    <string name="focus_schedule_time">সময়</string>
+    <string name="focus_schedule_starts">শুরু</string>
+    <string name="focus_schedule_ends">শেষ</string>
+    <string name="focus_schedule_next_day">পরদিন %1$s</string>
+    <string name="focus_schedule_options">অন্যান্য</string>
+    <string name="focus_schedule_enabled">শিডিউল চালু</string>
+    <string name="focus_schedule_grayscale">এই সময়ে গ্রেস্কেল</string>
+    <string name="focus_schedule_grayscale_summary">চলার সময় স্ক্রিন সাদা-কালো হয়ে যাবে।</string>
+    <string name="focus_schedule_grayscale_setup">গ্রেস্কেলের একবারের সেটআপের পর কাজ করবে।</string>
+    <string name="focus_schedule_grayscale_link">গ্রেস্কেল সেটআপ করুন</string>
+    <string name="focus_schedule_delete">শিডিউল মুছুন</string>
+    <string name="focus_schedule_delete_title">শিডিউলটি মুছবেন?</string>
+    <string name="focus_schedule_delete_message">“%1$s” মুছে যাবে।</string>
+    <string name="focus_schedule_pick_start">শুরুর সময়</string>
+    <string name="focus_schedule_pick_end">শেষের সময়</string>
 </resources>
