@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- বাংলা: ছোট ও স্বাভাবিক। -->
+<resources>
+    <string name="onboarding_step_count">ধাপ %1$d / %2$d</string>
+    <string name="onboarding_skip_setup">সেটআপ এড়িয়ে যান</string>
+    <string name="onboarding_tagline">শূন্য কোলাহল।</string>
+    <string name="onboarding_welcome_body">শান্ত, শুধু লেখার একটি হোম স্ক্রিন, যাতে ফোন চলে আপনার উদ্দেশ্যে। চলুন সাজিয়ে নিই। যেকোনো ধাপ এড়িয়ে যেতে পারেন।</string>
+    <string name="onboarding_start">শুরু করুন</string>
+
+    <string name="onboarding_look_title">নিজের মতো করুন</string>
+    <string name="onboarding_look_body">একটি থিম আর ফন্ট বেছে নিন। ট্যাপ করলেই বদলে যাবে; পরে সেটিংসেও বদলানো যাবে।</string>
+    <string name="onboarding_preview_app_1">ফোন</string>
+    <string name="onboarding_preview_app_2">মেসেজ</string>
+    <string name="onboarding_preview_app_3">ক্যামেরা</string>
+
+    <string name="onboarding_favorites_title">প্রিয় অ্যাপ</string>
+    <string name="onboarding_favorites_body">হোম স্ক্রিনের জন্য সর্বোচ্চ %1$dটি অ্যাপ বেছে নিন। বাকি সব এক সোয়াইপ দূরে।</string>
+    <string name="onboarding_favorites_count">%2$dটির মধ্যে %1$dটি</string>
+
+    <string name="onboarding_default_title">হোম অ্যাপ</string>
+    <string name="onboarding_default_body">শূন্যকে হোম স্ক্রিন করুন, যাতে হোম বোতামে এখানে ফেরেন। ফোনের সেটিংসে যেকোনো সময় আগেরটায় ফেরা যাবে।</string>
+    <string name="onboarding_default_action">হোম অ্যাপ করুন</string>
+    <string name="onboarding_default_done">শূন্য এখন আপনার হোম অ্যাপ।</string>
+    <string name="onboarding_default_not_yet">শূন্য এখনো আপনার হোম অ্যাপ নয়।</string>
+
+    <string name="onboarding_permissions_title">ঐচ্ছিক অনুমতি</string>
+    <string name="onboarding_permissions_body">দুটোই ঐচ্ছিক। এগুলো ছাড়াও শূন্য চলে; পরে সেটিংসের “অনুমতি” থেকে বদলানো যাবে।</string>
+    <string name="onboarding_usage_why">আপনার স্ক্রিন টাইম দেখায় আর দৈনিক সীমা কাজ করায়। কোন অ্যাপ কতক্ষণ ব্যবহার করেছেন, শূন্য তা পড়ে। তথ্য এই ফোনেই থাকে।</string>
+    <string name="onboarding_notifications_why">আপনার বাছাই করা অ্যাপের নোটিফিকেশন শান্ত একটি ইনবক্সে ধরে রাখে, শুধু “ধরে রাখা” চালু করলে। কিছুই ফোনের বাইরে যায় না।</string>
+
+    <string name="onboarding_done_title">সব তৈরি</string>
+    <string name="onboarding_done_body">সব অ্যাপ দেখতে উপরে সোয়াইপ করুন। দ্রুত মেনু আর সেটিংসের জন্য হোম স্ক্রিনে চেপে ধরুন।</string>
+    <string name="onboarding_done_action">হোমে যান</string>
+</resources>

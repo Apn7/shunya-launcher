@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Settings screens and the labels of every settings choice. Prefix: settings_ -->
+<resources>
+    <!-- Root -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_section_look">Look &amp; feel</string>
+    <string name="settings_section_wellbeing">Wellbeing</string>
+    <string name="settings_section_system">System</string>
+    <string name="settings_section_shunya">Shunya</string>
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_appearance_summary">%1$s · %2$s</string>
+    <string name="settings_home">Home screen</string>
+    <string name="settings_home_summary">Favorites and intention line · up to %1$d favorites</string>
+    <string name="settings_gestures">Gestures</string>
+    <string name="settings_gestures_summary">%1$d of %2$d gestures in use</string>
+    <string name="settings_drawer">App drawer</string>
+    <string name="settings_drawer_summary">Sort: %1$s</string>
+    <string name="settings_hidden_apps">Hidden apps</string>
+    <string name="settings_hidden_apps_none">No hidden apps</string>
+    <plurals name="settings_hidden_apps_count">
+        <item quantity="one">%d hidden app</item>
+        <item quantity="other">%d hidden apps</item>
+    </plurals>
+    <string name="settings_focus">Focus &amp; wellbeing</string>
+    <string name="settings_focus_summary_empty">Mindful pause, limits, focus sessions</string>
+    <plurals name="settings_focus_distracting_count">
+        <item quantity="one">%d distracting app</item>
+        <item quantity="other">%d distracting apps</item>
+    </plurals>
+    <string name="settings_screen_time">Screen time</string>
+    <string name="settings_screen_time_summary">Today\'s use, app by app</string>
+    <string name="settings_grayscale">Grayscale</string>
+    <string name="settings_grayscale_setup_needed">One-time setup needed</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_notifications_summary_off">Off · every notification shows</string>
+    <string name="settings_notifications_summary_hold">Hold · %1$d in the inbox</string>
+    <string name="settings_inbox">Notification inbox</string>
+    <string name="settings_permissions">Permissions</string>
+    <string name="settings_permissions_summary">%1$d of %2$d granted</string>
+    <string name="settings_accessibility">Accessibility service</string>
+    <string name="settings_accessibility_summary_off">Off · for double-tap lock and blocking everywhere</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_backup">Backup &amp; restore</string>
+    <string name="settings_backup_summary">Save or load one file</string>
+    <string name="settings_about">About Shunya</string>
+    <string name="settings_version">Version %1$s</string>
+
+    <!-- Choice labels -->
+    <string name="settings_theme_system">Follow system</string>
+    <string name="settings_theme_paper">Paper</string>
+    <string name="settings_theme_ink">Ink</string>
+    <string name="settings_theme_slate">Slate</string>
+    <string name="settings_font_inter" translatable="false">Inter</string>
+    <string name="settings_font_space_grotesk" translatable="false">Space Grotesk</string>
+    <string name="settings_font_ibm_plex_mono" translatable="false">IBM Plex Mono</string>
+    <string name="settings_font_lora" translatable="false">Lora</string>
+    <string name="settings_font_hind_siliguri" translatable="false">Hind Siliguri</string>
+    <string name="settings_font_system">Phone default</string>
+    <string name="settings_text_size_small">Small</string>
+    <string name="settings_text_size_medium">Medium</string>
+    <string name="settings_text_size_large">Large</string>
+    <string name="settings_text_size_extra_large">Extra large</string>
+    <string name="settings_alignment_start">Left</string>
+    <string name="settings_alignment_center">Center</string>
+    <string name="settings_alignment_end">Right</string>
+    <string name="settings_clock_large">Large</string>
+    <string name="settings_clock_medium">Medium</string>
+    <string name="settings_clock_format_system">Follow system</string>
+    <string name="settings_clock_format_12">12-hour</string>
+    <string name="settings_clock_format_24">24-hour</string>
+    <string name="settings_sort_alphabetical">A–Z</string>
+    <string name="settings_sort_most_used">Most used</string>
+    <string name="settings_gesture_swipe_down">Swipe down</string>
+    <string name="settings_gesture_swipe_left">Swipe left</string>
+    <string name="settings_gesture_swipe_right">Swipe right</string>
+    <string name="settings_gesture_double_tap">Double-tap</string>
+    <string name="settings_action_none">Nothing</string>
+    <string name="settings_action_notification_shade">Notifications</string>
+    <string name="settings_action_search">Search</string>
+    <string name="settings_action_open_app">Open an app</string>
+    <string name="settings_action_open_named">Open %1$s</string>
+    <string name="settings_action_screen_time">Screen time</string>
+    <string name="settings_action_focus_toggle">Start or stop focus</string>
+    <string name="settings_action_lock_screen">Lock screen</string>
+    <string name="settings_language_system">Follow system</string>
+    <string name="settings_language_english" translatable="false">English</string>
+    <string name="settings_language_bangla" translatable="false">বাংলা</string>
+
+    <!-- Appearance -->
+    <string name="settings_section_theme_type">Theme &amp; type</string>
+    <string name="settings_section_home_screen">Home screen</string>
+    <string name="settings_section_wallpaper">Wallpaper</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_font">Font</string>
+    <string name="settings_font_preview" translatable="false">Zero noise. 10:24</string>
+    <string name="settings_font_bangla_note">In Bangla, text uses Hind Siliguri with this font.</string>
+    <string name="settings_text_size">Text size</string>
+    <string name="settings_alignment">Alignment</string>
+    <string name="settings_show_clock">Clock</string>
+    <string name="settings_clock_size">Clock size</string>
+    <string name="settings_clock_format">Time format</string>
+    <string name="settings_show_seconds">Show seconds</string>
+    <string name="settings_show_date">Date</string>
+    <string name="settings_show_battery">Battery</string>
+    <string name="settings_show_next_alarm">Next alarm</string>
+    <string name="settings_show_status_line">Status line</string>
+    <string name="settings_show_status_line_summary">Focus time left, held notifications or screen time</string>
+    <string name="settings_show_intention">Intention line</string>
+    <string name="settings_show_intention_summary">A one-line reminder you write yourself</string>
+    <string name="settings_show_status_bar">Status bar</string>
+    <string name="settings_show_status_bar_summary">The system bar with time and battery</string>
+    <string name="settings_wallpaper_mode">Show wallpaper</string>
+    <string name="settings_wallpaper_mode_summary">Your wallpaper behind home, dimmed</string>
+    <string name="settings_wallpaper_dim">Dim</string>
+    <string name="settings_percent">%1$d%%</string>
+    <string name="settings_wallpaper_change">Change wallpaper</string>
+
+    <!-- Gestures -->
+    <string name="settings_gestures_fixed">Always on</string>
+    <string name="settings_gesture_swipe_up">Swipe up</string>
+    <string name="settings_gesture_swipe_up_value">App drawer</string>
+    <string name="settings_gesture_long_press">Long-press</string>
+    <string name="settings_gesture_long_press_value">Quick menu</string>
+    <string name="settings_gestures_lock_needs_service">Double-tap to lock needs Shunya\'s accessibility service.</string>
+    <string name="settings_gestures_lock_needs_android9">Locking the screen needs Android 9 or newer.</string>
+    <string name="settings_set_up">Set up</string>
+    <string name="settings_pick_app">Choose an app</string>
+    <string name="settings_no_app_chosen">No app chosen</string>
+    <string name="settings_search_apps">Search apps</string>
+    <string name="settings_no_apps_found">No apps match</string>
+    <string name="settings_work_tag">Work</string>
+
+    <!-- App drawer -->
+    <string name="settings_drawer_sort">Sort</string>
+    <string name="settings_drawer_sort_needs_usage">Most used needs usage access. Until then, apps are sorted A–Z.</string>
+    <string name="settings_drawer_section_letters">Section letters</string>
+    <string name="settings_drawer_section_letters_summary">A, B, C… headers in the list</string>
+    <string name="settings_drawer_auto_keyboard">Open keyboard</string>
+    <string name="settings_drawer_auto_keyboard_summary">Start typing as soon as the drawer opens</string>
+    <string name="settings_drawer_auto_launch">Open single match</string>
+    <string name="settings_drawer_auto_launch_summary">Launch right away when only one app matches</string>
+    <string name="settings_drawer_work_apps">Work apps</string>
+    <string name="settings_drawer_work_apps_summary">Show apps from your work profile</string>
+    <string name="settings_drawer_apps_button">Apps button on home</string>
+    <string name="settings_drawer_apps_button_summary">A small “apps” link to open the drawer without swiping</string>
+
+    <!-- Permissions -->
+    <string name="settings_permissions_intro">Shunya works without any of these. Each one turns on one specific thing.</string>
+    <string name="settings_perm_launcher">Default home app</string>
+    <string name="settings_perm_launcher_why">So the Home button opens Shunya.</string>
+    <string name="settings_perm_launcher_action">Set as default</string>
+    <string name="settings_perm_usage">Usage access</string>
+    <string name="settings_perm_usage_why">Screen time, daily limits and “Most used” sorting.</string>
+    <string name="settings_perm_notifications">Notification access</string>
+    <string name="settings_perm_notifications_why">Holding notifications in the inbox.</string>
+    <string name="settings_perm_accessibility">Accessibility service</string>
+    <string name="settings_perm_accessibility_why">Double-tap to lock, and blocking apps opened from anywhere.</string>
+    <string name="settings_perm_secure">Secure settings</string>
+    <string name="settings_perm_secure_why">Turning grayscale on and off. Granted once from a computer.</string>
+    <string name="settings_perm_install_header">Granted at install</string>
+    <string name="settings_perm_expand">Open the notification shade</string>
+    <string name="settings_perm_expand_why">When you swipe down on home.</string>
+    <string name="settings_perm_delete">Ask to uninstall apps</string>
+    <string name="settings_perm_delete_why">The Uninstall action. Android always asks you first.</string>
+    <string name="settings_perm_vibrate">Vibrate</string>
+    <string name="settings_perm_vibrate_why">Small haptic ticks.</string>
+    <string name="settings_perm_alarm">Show alarms</string>
+    <string name="settings_perm_alarm_why">Tapping the clock opens your alarms.</string>
+    <string name="settings_privacy_statement">No internet permission. Nothing leaves your phone.</string>
+
+    <!-- Backup & restore -->
+    <string name="settings_backup_intro">One file with your settings, home screen, renamed and hidden apps, and focus rules. Held notifications are not included.</string>
+    <string name="settings_backup_export">Export backup</string>
+    <string name="settings_backup_export_summary">Save a file with the system file picker</string>
+    <string name="settings_backup_import">Import backup</string>
+    <string name="settings_backup_import_summary">Replace your current setup with a saved file</string>
+    <string name="settings_backup_working">Working…</string>
+    <string name="settings_backup_saved">Backup saved.</string>
+    <string name="settings_backup_restored">Backup restored.</string>
+    <string name="settings_backup_error_write">Couldn\'t save the file. Try another place.</string>
+    <string name="settings_backup_error_read">Couldn\'t read that file.</string>
+    <string name="settings_backup_error_not_backup">That file isn\'t a Shunya backup.</string>
+    <string name="settings_backup_error_newer">This backup comes from a newer Shunya. Update the app, then try again.</string>
+    <string name="settings_backup_error_incomplete">This backup is missing parts, so it wasn\'t used.</string>
+    <string name="settings_backup_error_too_large">That file is too large to be a Shunya backup.</string>
+    <string name="settings_backup_error_apply">Couldn\'t restore the backup. Nothing was changed.</string>
+    <string name="settings_backup_confirm_title">Replace your setup?</string>
+    <string name="settings_backup_confirm_message">Your settings, home screen, hidden apps and focus rules will be replaced with this backup from %1$s.</string>
+    <string name="settings_backup_confirm_action">Replace</string>
+
+    <!-- Language -->
+    <string name="settings_language_hint">The screen reloads in the new language.</string>
+    <string name="settings_language_old_android">On this Android version Shunya uses your phone\'s language. You can change it in system settings.</string>
+    <string name="settings_language_open_system">Open language settings</string>
+
+    <!-- About -->
+    <string name="settings_about_name_bangla" translatable="false">শূন্য</string>
+    <string name="settings_about_tagline">Zero noise.</string>
+    <string name="settings_about_meaning_title">The name</string>
+    <string name="settings_about_meaning">Shunya (শূন্য) is Bangla and Sanskrit for zero, or emptiness. A home screen with nothing extra, only what you choose.</string>
+    <string name="settings_about_privacy_title">Privacy</string>
+    <string name="settings_about_privacy_detail">No analytics, no accounts, no ads. Your settings stay on this phone.</string>
+    <string name="settings_about_fonts_title">Fonts</string>
+    <string name="settings_about_fonts">Inter, Space Grotesk, IBM Plex Mono, Lora and Hind Siliguri are used under the SIL Open Font License 1.1.</string>
+    <string name="settings_about_font_credits" translatable="false">Inter · The Inter Project Authors\nSpace Grotesk · The Space Grotesk Project Authors\nIBM Plex Mono · IBM Corp.\nLora · The Lora Project Authors\nHind Siliguri · Indian Type Foundry</string>
+    <string name="settings_about_onboarding">Run setup again</string>
+    <string name="settings_about_onboarding_summary">Theme, favorites, home app, permissions</string>
+</resources>

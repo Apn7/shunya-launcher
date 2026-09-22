@@ -112,7 +112,26 @@ class AppContainer(context: Context, val appScope: CoroutineScope) {
     // ------------------------------------------------------------------------------------------
 
     // region notifications — notifications, settings
-    val notificationInbox: NotificationInbox by lazy { HeldNotificationInbox() }
+    /**
+     * The inbox as its implementation type, for `NotificationFilterService` only (it adds held
+     * items). Everyone else uses [notificationInbox].
+     */
+    val heldNotificationInbox: HeldNotificationInbox by lazy {
+        HeldNotificationInbox(
+            context = appContext,
+            store = appContext.jsonDataStore(
+                "notification_inbox.json",
+                kotlinx.serialization.builtins.ListSerializer(dev.apn7.shunya.core.model.HeldNotification.serializer()),
+                emptyList(),
+            ),
+            scope = appScope,
+            appsRepository = appsRepository,
+            appLauncher = appLauncher,
+            launchPolicy = launchPolicy,
+        )
+    }
+
+    val notificationInbox: NotificationInbox get() = heldNotificationInbox
     // endregion notifications
 }
 

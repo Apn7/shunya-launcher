@@ -1,4 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- বাংলা: ছোট ও স্বাভাবিক। -->
 <resources>
     <string name="notifications_listener_label">শূন্য নোটিফিকেশন ফিল্টার</string>
+
+    <!-- Notification settings -->
+    <string name="notifications_title">নোটিফিকেশন</string>
+    <string name="notifications_mode">ফিল্টার</string>
+    <string name="notifications_mode_off">বন্ধ</string>
+    <string name="notifications_mode_hold">ধরে রাখা</string>
+    <string name="notifications_mode_off_summary">সব নোটিফিকেশন আগের মতোই দেখাবে।</string>
+    <string name="notifications_mode_hold_summary">যেসব অ্যাপকে অনুমতি দেননি, সেগুলোর নোটিফিকেশন চুপচাপ ইনবক্সে অপেক্ষা করবে।</string>
+    <string name="notifications_disclosure">“ধরে রাখা” চালু থাকলে শূন্য অনুমতি না-দেওয়া অ্যাপের নোটিফিকেশন পড়ে, প্যানেল থেকে সরিয়ে দেয় এবং অ্যাপের নাম, শিরোনাম ও লেখা এই ফোনেই নিজের ইনবক্সে রাখে। কল, অ্যালার্ম, মিডিয়া কন্ট্রোল আর চলমান নোটিফিকেশন কখনো ধরা হয় না। কিছুই ফোনের বাইরে যায় না।</string>
+    <string name="notifications_access_title">নোটিফিকেশন অ্যাক্সেস</string>
+    <string name="notifications_access_why">“ধরে রাখা”-র জন্য লাগবে। Android আপনার সম্মতি চাইবে।</string>
+    <string name="notifications_access_missing">“ধরে রাখা” চালু, কিন্তু শূন্য এখনো নোটিফিকেশন দেখতে পাচ্ছে না।</string>
+    <string name="notifications_allowed">অনুমোদিত অ্যাপ</string>
+    <string name="notifications_allowed_defaults_summary">ফোন, মেসেজ, ঘড়ি ও ক্যালেন্ডার (ডিফল্ট)</string>
+    <plurals name="notifications_allowed_count">
+        <item quantity="other">%dটি অ্যাপ সবসময় দেখায়</item>
+    </plurals>
+    <string name="notifications_inbox">ইনবক্স</string>
+    <string name="notifications_inbox_empty_summary">কিছু জমা নেই</string>
+    <plurals name="notifications_inbox_count">
+        <item quantity="other">%dটি নোটিফিকেশন জমা</item>
+    </plurals>
+
+    <!-- Allowed apps -->
+    <string name="notifications_allowed_intro">টিক দেওয়া অ্যাপের নোটিফিকেশন সবসময় দেখাবে। “ধরে রাখা” চালু থাকলে বাকিগুলো ইনবক্সে অপেক্ষা করবে।</string>
+    <string name="notifications_allowed_using_defaults">ডিফল্ট তালিকা চলছে: ফোন, মেসেজ, ঘড়ি, ক্যালেন্ডার ও শূন্য।</string>
+    <string name="notifications_allowed_default_tag">ডিফল্ট</string>
+    <string name="notifications_allowed_reset">রিসেট</string>
+
+    <!-- Inbox -->
+    <string name="inbox_title">ইনবক্স</string>
+    <string name="inbox_clear_all">সব মুছুন</string>
+    <string name="inbox_clear_title">ইনবক্স খালি করবেন?</string>
+    <plurals name="inbox_clear_message">
+        <item quantity="other">%dটি জমা নোটিফিকেশন মুছে যাবে।</item>
+    </plurals>
+    <string name="inbox_empty_title">কিছু জমা নেই</string>
+    <string name="inbox_empty_hold">অনুমতি না-দেওয়া অ্যাপের নোটিফিকেশন এখানে অপেক্ষা করবে।</string>
+    <string name="inbox_empty_off">এখানে জমাতে “ধরে রাখা” চালু করুন।</string>
+    <string name="inbox_open_settings">নোটিফিকেশন সেটিংস</string>
+    <string name="inbox_dismiss">সরান</string>
+    <string name="inbox_group_header">%1$s · %2$d</string>
 </resources>

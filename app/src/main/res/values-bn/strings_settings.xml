@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- বাংলা: ছোট ও স্বাভাবিক। -->
+<resources>
+    <!-- Root -->
+    <string name="settings_title">সেটিংস</string>
+    <string name="settings_section_look">চেহারা ও ব্যবহার</string>
+    <string name="settings_section_wellbeing">মনোযোগ ও সুস্থতা</string>
+    <string name="settings_section_system">সিস্টেম</string>
+    <string name="settings_section_shunya">শূন্য</string>
+    <string name="settings_appearance">চেহারা</string>
+    <string name="settings_appearance_summary">%1$s · %2$s</string>
+    <string name="settings_home">হোম স্ক্রিন</string>
+    <string name="settings_home_summary">প্রিয় অ্যাপ ও উদ্দেশ্যের লাইন · সর্বোচ্চ %1$dটি</string>
+    <string name="settings_gestures">জেসচার</string>
+    <string name="settings_gestures_summary">%2$dটির মধ্যে %1$dটি চালু</string>
+    <string name="settings_drawer">অ্যাপ তালিকা</string>
+    <string name="settings_drawer_summary">সাজানো: %1$s</string>
+    <string name="settings_hidden_apps">লুকানো অ্যাপ</string>
+    <string name="settings_hidden_apps_none">কোনো অ্যাপ লুকানো নেই</string>
+    <plurals name="settings_hidden_apps_count">
+        <item quantity="other">%dটি অ্যাপ লুকানো</item>
+    </plurals>
+    <string name="settings_focus">মনোযোগ ও সুস্থতা</string>
+    <string name="settings_focus_summary_empty">সচেতন বিরতি, সময়সীমা, ফোকাস</string>
+    <plurals name="settings_focus_distracting_count">
+        <item quantity="other">%dটি মনোযোগ কাড়া অ্যাপ</item>
+    </plurals>
+    <string name="settings_screen_time">স্ক্রিন টাইম</string>
+    <string name="settings_screen_time_summary">আজকের ব্যবহার, অ্যাপ ধরে ধরে</string>
+    <string name="settings_grayscale">সাদাকালো</string>
+    <string name="settings_grayscale_setup_needed">একবার সেটআপ করতে হবে</string>
+    <string name="settings_notifications">নোটিফিকেশন</string>
+    <string name="settings_notifications_summary_off">বন্ধ · সব নোটিফিকেশন দেখায়</string>
+    <string name="settings_notifications_summary_hold">ধরে রাখা · ইনবক্সে %1$dটি</string>
+    <string name="settings_inbox">নোটিফিকেশন ইনবক্স</string>
+    <string name="settings_permissions">অনুমতি</string>
+    <string name="settings_permissions_summary">%2$dটির মধ্যে %1$dটি দেওয়া</string>
+    <string name="settings_accessibility">অ্যাক্সেসিবিলিটি সার্ভিস</string>
+    <string name="settings_accessibility_summary_off">বন্ধ · ডাবল-ট্যাপে লক ও সবখানে ব্লকের জন্য</string>
+    <string name="settings_language">ভাষা</string>
+    <string name="settings_backup">ব্যাকআপ ও রিস্টোর</string>
+    <string name="settings_backup_summary">একটি ফাইলে রাখুন বা ফিরিয়ে আনুন</string>
+    <string name="settings_about">শূন্য সম্পর্কে</string>
+    <string name="settings_version">সংস্করণ %1$s</string>
+
+    <!-- Choice labels -->
+    <string name="settings_theme_system">সিস্টেম অনুযায়ী</string>
+    <string name="settings_theme_paper">কাগজ</string>
+    <string name="settings_theme_ink">কালি</string>
+    <string name="settings_theme_slate">স্লেট</string>
+    <string name="settings_font_system">ফোনের ফন্ট</string>
+    <string name="settings_text_size_small">ছোট</string>
+    <string name="settings_text_size_medium">মাঝারি</string>
+    <string name="settings_text_size_large">বড়</string>
+    <string name="settings_text_size_extra_large">অনেক বড়</string>
+    <string name="settings_alignment_start">বাঁয়ে</string>
+    <string name="settings_alignment_center">মাঝে</string>
+    <string name="settings_alignment_end">ডানে</string>
+    <string name="settings_clock_large">বড়</string>
+    <string name="settings_clock_medium">মাঝারি</string>
+    <string name="settings_clock_format_system">সিস্টেম অনুযায়ী</string>
+    <string name="settings_clock_format_12">১২ ঘণ্টা</string>
+    <string name="settings_clock_format_24">২৪ ঘণ্টা</string>
+    <string name="settings_sort_alphabetical">বর্ণানুক্রমে</string>
+    <string name="settings_sort_most_used">বেশি ব্যবহৃত আগে</string>
+    <string name="settings_gesture_swipe_down">নিচে সোয়াইপ</string>
+    <string name="settings_gesture_swipe_left">বাঁয়ে সোয়াইপ</string>
+    <string name="settings_gesture_swipe_right">ডানে সোয়াইপ</string>
+    <string name="settings_gesture_double_tap">ডাবল-ট্যাপ</string>
+    <string name="settings_action_none">কিছু না</string>
+    <string name="settings_action_notification_shade">নোটিফিকেশন</string>
+    <string name="settings_action_search">খোঁজা</string>
+    <string name="settings_action_open_app">একটি অ্যাপ খোলা</string>
+    <string name="settings_action_open_named">%1$s খোলা</string>
+    <string name="settings_action_screen_time">স্ক্রিন টাইম</string>
+    <string name="settings_action_focus_toggle">ফোকাস শুরু বা শেষ</string>
+    <string name="settings_action_lock_screen">স্ক্রিন লক</string>
+    <string name="settings_language_system">সিস্টেম অনুযায়ী</string>
+
+    <!-- Appearance -->
+    <string name="settings_section_theme_type">থিম ও ফন্ট</string>
+    <string name="settings_section_home_screen">হোম স্ক্রিন</string>
+    <string name="settings_section_wallpaper">ওয়ালপেপার</string>
+    <string name="settings_theme">থিম</string>
+    <string name="settings_font">ফন্ট</string>
+    <string name="settings_font_bangla_note">বাংলায় এই ফন্টের সঙ্গে হিন্দ শিলিগুড়ি ব্যবহার হয়।</string>
+    <string name="settings_text_size">লেখার আকার</string>
+    <string name="settings_alignment">অবস্থান</string>
+    <string name="settings_show_clock">ঘড়ি</string>
+    <string name="settings_clock_size">ঘড়ির আকার</string>
+    <string name="settings_clock_format">সময়ের ধরন</string>
+    <string name="settings_show_seconds">সেকেন্ড দেখান</string>
+    <string name="settings_show_date">তারিখ</string>
+    <string name="settings_show_battery">ব্যাটারি</string>
+    <string name="settings_show_next_alarm">পরের অ্যালার্ম</string>
+    <string name="settings_show_status_line">স্ট্যাটাস লাইন</string>
+    <string name="settings_show_status_line_summary">ফোকাসের বাকি সময়, জমা নোটিফিকেশন বা স্ক্রিন টাইম</string>
+    <string name="settings_show_intention">উদ্দেশ্যের লাইন</string>
+    <string name="settings_show_intention_summary">নিজের লেখা এক লাইনের মনে করিয়ে দেওয়া</string>
+    <string name="settings_show_status_bar">স্ট্যাটাস বার</string>
+    <string name="settings_show_status_bar_summary">সময় ও ব্যাটারিসহ উপরের সিস্টেম বার</string>
+    <string name="settings_wallpaper_mode">ওয়ালপেপার দেখান</string>
+    <string name="settings_wallpaper_mode_summary">হোমের পেছনে আপনার ওয়ালপেপার, একটু আবছা</string>
+    <string name="settings_wallpaper_dim">আবছা</string>
+    <string name="settings_percent">%1$d%%</string>
+    <string name="settings_wallpaper_change">ওয়ালপেপার বদলান</string>
+
+    <!-- Gestures -->
+    <string name="settings_gestures_fixed">সবসময় চালু</string>
+    <string name="settings_gesture_swipe_up">উপরে সোয়াইপ</string>
+    <string name="settings_gesture_swipe_up_value">অ্যাপ তালিকা</string>
+    <string name="settings_gesture_long_press">চেপে ধরা</string>
+    <string name="settings_gesture_long_press_value">দ্রুত মেনু</string>
+    <string name="settings_gestures_lock_needs_service">ডাবল-ট্যাপে লক করতে শূন্যের অ্যাক্সেসিবিলিটি সার্ভিস লাগবে।</string>
+    <string name="settings_gestures_lock_needs_android9">স্ক্রিন লক করতে Android 9 বা নতুন সংস্করণ লাগবে।</string>
+    <string name="settings_set_up">সেটআপ করুন</string>
+    <string name="settings_pick_app">অ্যাপ বেছে নিন</string>
+    <string name="settings_no_app_chosen">কোনো অ্যাপ বাছা হয়নি</string>
+    <string name="settings_search_apps">অ্যাপ খুঁজুন</string>
+    <string name="settings_no_apps_found">মেলে এমন অ্যাপ নেই</string>
+    <string name="settings_work_tag">অফিস</string>
+
+    <!-- App drawer -->
+    <string name="settings_drawer_sort">সাজানো</string>
+    <string name="settings_drawer_sort_needs_usage">“বেশি ব্যবহৃত” সাজাতে ব্যবহারের তথ্যের অনুমতি লাগবে। ততক্ষণ বর্ণানুক্রমে থাকবে।</string>
+    <string name="settings_drawer_section_letters">অক্ষরের শিরোনাম</string>
+    <string name="settings_drawer_section_letters_summary">তালিকায় A, B, C… ভাগ</string>
+    <string name="settings_drawer_auto_keyboard">কিবোর্ড খুলুন</string>
+    <string name="settings_drawer_auto_keyboard_summary">তালিকা খুললেই টাইপ শুরু করুন</string>
+    <string name="settings_drawer_auto_launch">একটি মিললেই খুলুন</string>
+    <string name="settings_drawer_auto_launch_summary">শুধু একটি অ্যাপ মিললে নিজে থেকেই খুলবে</string>
+    <string name="settings_drawer_work_apps">অফিসের অ্যাপ</string>
+    <string name="settings_drawer_work_apps_summary">ওয়ার্ক প্রোফাইলের অ্যাপ দেখান</string>
+    <string name="settings_drawer_apps_button">হোমে অ্যাপ বোতাম</string>
+    <string name="settings_drawer_apps_button_summary">সোয়াইপ ছাড়াই তালিকা খুলতে ছোট্ট “অ্যাপ” লেখা</string>
+
+    <!-- Permissions -->
+    <string name="settings_permissions_intro">এগুলোর কোনোটি ছাড়াই শূন্য চলে। প্রতিটি একটি নির্দিষ্ট সুবিধা চালু করে।</string>
+    <string name="settings_perm_launcher">ডিফল্ট হোম অ্যাপ</string>
+    <string name="settings_perm_launcher_why">যাতে হোম বোতামে শূন্য খোলে।</string>
+    <string name="settings_perm_launcher_action">ডিফল্ট করুন</string>
+    <string name="settings_perm_usage">ব্যবহারের তথ্য</string>
+    <string name="settings_perm_usage_why">স্ক্রিন টাইম, দৈনিক সীমা আর “বেশি ব্যবহৃত” সাজানো।</string>
+    <string name="settings_perm_notifications">নোটিফিকেশন অ্যাক্সেস</string>
+    <string name="settings_perm_notifications_why">নোটিফিকেশন ইনবক্সে ধরে রাখা।</string>
+    <string name="settings_perm_accessibility">অ্যাক্সেসিবিলিটি সার্ভিস</string>
+    <string name="settings_perm_accessibility_why">ডাবল-ট্যাপে লক, আর যেকোনো জায়গা থেকে খোলা অ্যাপ ব্লক করা।</string>
+    <string name="settings_perm_secure">সিকিউর সেটিংস</string>
+    <string name="settings_perm_secure_why">সাদাকালো চালু-বন্ধ। কম্পিউটার থেকে একবার দিতে হয়।</string>
+    <string name="settings_perm_install_header">ইনস্টলের সময় দেওয়া</string>
+    <string name="settings_perm_expand">নোটিফিকেশন প্যানেল খোলা</string>
+    <string name="settings_perm_expand_why">হোমে নিচে সোয়াইপ করলে।</string>
+    <string name="settings_perm_delete">অ্যাপ আনইনস্টলের অনুরোধ</string>
+    <string name="settings_perm_delete_why">আনইনস্টলের আগে Android সবসময় আপনাকে জিজ্ঞেস করে।</string>
+    <string name="settings_perm_vibrate">ভাইব্রেশন</string>
+    <string name="settings_perm_vibrate_why">ছোট্ট হ্যাপটিক টিক।</string>
+    <string name="settings_perm_alarm">অ্যালার্ম দেখা</string>
+    <string name="settings_perm_alarm_why">ঘড়িতে ট্যাপ করলে অ্যালার্ম খোলে।</string>
+    <string name="settings_privacy_statement">ইন্টারনেটের অনুমতি নেই। কিছুই আপনার ফোনের বাইরে যায় না।</string>
+
+    <!-- Backup & restore -->
+    <string name="settings_backup_intro">একটি ফাইলে আপনার সেটিংস, হোম স্ক্রিন, নাম বদলানো ও লুকানো অ্যাপ আর ফোকাসের নিয়ম। জমা নোটিফিকেশন এতে থাকে না।</string>
+    <string name="settings_backup_export">ব্যাকআপ নিন</string>
+    <string name="settings_backup_export_summary">সিস্টেমের ফাইল পিকারে একটি ফাইল রাখুন</string>
+    <string name="settings_backup_import">ব্যাকআপ থেকে ফেরান</string>
+    <string name="settings_backup_import_summary">রাখা ফাইল দিয়ে এখনকার সেটআপ বদলে দিন</string>
+    <string name="settings_backup_working">হচ্ছে…</string>
+    <string name="settings_backup_saved">ব্যাকআপ রাখা হয়েছে।</string>
+    <string name="settings_backup_restored">ব্যাকআপ থেকে ফেরানো হয়েছে।</string>
+    <string name="settings_backup_error_write">ফাইলটি রাখা গেল না। অন্য জায়গায় চেষ্টা করুন।</string>
+    <string name="settings_backup_error_read">ফাইলটি পড়া গেল না।</string>
+    <string name="settings_backup_error_not_backup">এটি শূন্যের ব্যাকআপ ফাইল নয়।</string>
+    <string name="settings_backup_error_newer">এই ব্যাকআপ শূন্যের নতুন সংস্করণের। অ্যাপ আপডেট করে আবার চেষ্টা করুন।</string>
+    <string name="settings_backup_error_incomplete">ব্যাকআপের কিছু অংশ নেই, তাই ব্যবহার করা হয়নি।</string>
+    <string name="settings_backup_error_too_large">ফাইলটি শূন্যের ব্যাকআপ হওয়ার পক্ষে অনেক বড়।</string>
+    <string name="settings_backup_error_apply">ব্যাকআপ থেকে ফেরানো গেল না। কিছুই বদলায়নি।</string>
+    <string name="settings_backup_confirm_title">সেটআপ বদলে দেবেন?</string>
+    <string name="settings_backup_confirm_message">আপনার সেটিংস, হোম স্ক্রিন, লুকানো অ্যাপ আর ফোকাসের নিয়ম %1$s তারিখের এই ব্যাকআপ দিয়ে বদলে যাবে।</string>
+    <string name="settings_backup_confirm_action">বদলে দিন</string>
+
+    <!-- Language -->
+    <string name="settings_language_hint">নতুন ভাষায় স্ক্রিনটি আবার খুলবে।</string>
+    <string name="settings_language_old_android">এই Android সংস্করণে শূন্য ফোনের ভাষাই ব্যবহার করে। সিস্টেম সেটিংসে ভাষা বদলাতে পারেন।</string>
+    <string name="settings_language_open_system">ভাষার সেটিংস খুলুন</string>
+
+    <!-- About -->
+    <string name="settings_about_tagline">শূন্য কোলাহল।</string>
+    <string name="settings_about_meaning_title">নামটি</string>
+    <string name="settings_about_meaning">“শূন্য” মানে ফাঁকা, কিছুই নেই — আবার সেই শূন্যও, যেখান থেকে গোনা শুরু। বাড়তি কিছু নেই এমন একটি হোম স্ক্রিন, শুধু যা আপনি বেছে নেন।</string>
+    <string name="settings_about_privacy_title">গোপনীয়তা</string>
+    <string name="settings_about_privacy_detail">কোনো অ্যানালিটিক্স, অ্যাকাউন্ট বা বিজ্ঞাপন নেই। আপনার সেটিংস এই ফোনেই থাকে।</string>
+    <string name="settings_about_fonts_title">ফন্ট</string>
+    <string name="settings_about_fonts">Inter, Space Grotesk, IBM Plex Mono, Lora ও Hind Siliguri ব্যবহার হয়েছে SIL Open Font License 1.1-এর অধীনে।</string>
+    <string name="settings_about_onboarding">সেটআপ আবার চালান</string>
+    <string name="settings_about_onboarding_summary">থিম, প্রিয় অ্যাপ, হোম অ্যাপ, অনুমতি</string>
+</resources>

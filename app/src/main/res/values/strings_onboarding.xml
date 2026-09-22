@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- First-run setup. Prefix: onboarding_ -->
+<resources>
+    <string name="onboarding_step_count">Step %1$d of %2$d</string>
+    <string name="onboarding_skip_setup">Skip setup</string>
+    <string name="onboarding_name_bangla" translatable="false">শূন্য</string>
+    <string name="onboarding_tagline">Zero noise.</string>
+    <string name="onboarding_welcome_body">A calm, text-only home screen that helps you use your phone on purpose. Let\'s set it up. Every step can be skipped.</string>
+    <string name="onboarding_start">Start</string>
+
+    <string name="onboarding_look_title">Make it yours</string>
+    <string name="onboarding_look_body">Pick a theme and a typeface. Everything changes as you tap, and you can change it again in Settings.</string>
+    <string name="onboarding_preview_app_1">Phone</string>
+    <string name="onboarding_preview_app_2">Messages</string>
+    <string name="onboarding_preview_app_3">Camera</string>
+
+    <string name="onboarding_favorites_title">Favorites</string>
+    <string name="onboarding_favorites_body">Pick up to %1$d apps for your home screen. Everything else is one swipe up.</string>
+    <string name="onboarding_favorites_count">%1$d of %2$d</string>
+
+    <string name="onboarding_default_title">Home app</string>
+    <string name="onboarding_default_body">Make Shunya your home screen, so the Home button brings you here. You can switch back any time in your phone\'s settings.</string>
+    <string name="onboarding_default_action">Set as home app</string>
+    <string name="onboarding_default_done">Shunya is your home app.</string>
+    <string name="onboarding_default_not_yet">Shunya isn\'t your home app yet.</string>
+
+    <string name="onboarding_permissions_title">Optional access</string>
+    <string name="onboarding_permissions_body">Both are optional. Shunya works without them, and you can change them later in Settings, Permissions.</string>
+    <string name="onboarding_usage_why">Shows your screen time and makes daily limits work. Shunya reads which apps you used and for how long. It stays on this phone.</string>
+    <string name="onboarding_notifications_why">Lets Shunya hold notifications from apps you choose in a quiet inbox, only if you turn Hold on. Nothing leaves your phone.</string>
+
+    <string name="onboarding_done_title">All set</string>
+    <string name="onboarding_done_body">Swipe up for all your apps. Long-press the home screen for the quick menu and Settings.</string>
+    <string name="onboarding_done_action">Go home</string>
+</resources>

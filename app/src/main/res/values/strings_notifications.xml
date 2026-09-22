@@ -1,5 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Prefix: notifications_ -->
+<!-- Notification filter, allowed apps and the Inbox. Prefixes: notifications_, inbox_ -->
 <resources>
     <string name="notifications_listener_label">Shunya notification filter</string>
+
+    <!-- Notification settings -->
+    <string name="notifications_title">Notifications</string>
+    <string name="notifications_mode">Filter</string>
+    <string name="notifications_mode_off">Off</string>
+    <string name="notifications_mode_hold">Hold</string>
+    <string name="notifications_mode_off_summary">Every notification shows as usual.</string>
+    <string name="notifications_mode_hold_summary">Apps you haven\'t allowed wait quietly in the inbox.</string>
+    <string name="notifications_disclosure">With Hold on, Shunya reads notifications from apps you haven\'t allowed, removes them from the shade and keeps the app name, title and text in its inbox on this phone. Calls, alarms, media controls and ongoing notifications are never held. Nothing leaves your phone.</string>
+    <string name="notifications_access_title">Notification access</string>
+    <string name="notifications_access_why">Needed for Hold. Android asks you to confirm.</string>
+    <string name="notifications_access_missing">Hold is on, but Shunya can\'t see notifications yet.</string>
+    <string name="notifications_allowed">Allowed apps</string>
+    <string name="notifications_allowed_defaults_summary">Phone, messages, clock and calendar (built-in)</string>
+    <plurals name="notifications_allowed_count">
+        <item quantity="one">%d app always shows</item>
+        <item quantity="other">%d apps always show</item>
+    </plurals>
+    <string name="notifications_inbox">Inbox</string>
+    <string name="notifications_inbox_empty_summary">Nothing held</string>
+    <plurals name="notifications_inbox_count">
+        <item quantity="one">%d notification held</item>
+        <item quantity="other">%d notifications held</item>
+    </plurals>
+
+    <!-- Allowed apps -->
+    <string name="notifications_allowed_intro">Notifications from ticked apps always show. While Hold is on, the rest wait in the inbox.</string>
+    <string name="notifications_allowed_using_defaults">Using the built-in list: phone, messages, clock, calendar and Shunya.</string>
+    <string name="notifications_allowed_default_tag">Built-in</string>
+    <string name="notifications_allowed_reset">Reset</string>
+
+    <!-- Inbox -->
+    <string name="inbox_title">Inbox</string>
+    <string name="inbox_clear_all">Clear all</string>
+    <string name="inbox_clear_title">Clear the inbox?</string>
+    <plurals name="inbox_clear_message">
+        <item quantity="one">%d held notification will be removed.</item>
+        <item quantity="other">All %d held notifications will be removed.</item>
+    </plurals>
+    <string name="inbox_empty_title">Nothing held</string>
+    <string name="inbox_empty_hold">Notifications from apps you haven\'t allowed will wait here.</string>
+    <string name="inbox_empty_off">Turn on Hold to collect notifications here.</string>
+    <string name="inbox_open_settings">Notification settings</string>
+    <string name="inbox_dismiss">Dismiss</string>
+    <string name="inbox_group_header">%1$s · %2$d</string>
 </resources>
