@@ -70,3 +70,11 @@ dependencies {
 
     testImplementation(libs.junit)
 }
+
+// Copy the debug APK to <repo>/apk/shunya-debug.apk after every assembleDebug, for easy sideloading.
+val exportDebugApk = tasks.register<Copy>("exportDebugApk") {
+    from(layout.buildDirectory.dir("outputs/apk/debug")) { include("*.apk") }
+    into(rootProject.layout.projectDirectory.dir("apk"))
+    rename { "shunya-debug.apk" }
+}
+tasks.matching { it.name == "assembleDebug" }.configureEach { finalizedBy(exportDebugApk) }
