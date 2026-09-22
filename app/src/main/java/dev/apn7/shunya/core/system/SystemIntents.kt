@@ -72,16 +72,11 @@ object SystemIntents {
         return listOf(detail, generic)
     }
 
-    /** Accessibility settings (Android 12+ opens Shunya's service page directly). */
-    fun accessibilitySettings(context: Context): List<Intent> {
-        val generic = Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.S) return listOf(generic)
-        val detail = Intent(Settings.ACTION_ACCESSIBILITY_DETAILS_SETTINGS).putExtra(
-            Intent.EXTRA_COMPONENT_NAME,
-            ShunyaComponents.accessibilityService(context).flattenToString(),
-        )
-        return listOf(detail, generic)
-    }
+    /**
+     * The system accessibility settings list, where the user turns on "Shunya focus". (The per-service
+     * detail page is a system-only API, so apps can't open it directly.)
+     */
+    fun accessibilitySettings(): Intent = Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)
 
     /** The system wallpaper picker chooser. */
     fun setWallpaper(): Intent = Intent.createChooser(Intent(Intent.ACTION_SET_WALLPAPER), null)

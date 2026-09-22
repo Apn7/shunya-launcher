@@ -101,7 +101,7 @@ Reload requests go through a conflated channel, so a burst of package events cos
 cache is rewritten only when the list changes. Sorting uses `java.text.Collator` at primary strength
 in the current locale, so case, accents and Bangla are all ordered naturally.
 
-**Navigation.** The navigation is in-house (about 150 lines) instead of the Navigation library:
+**Navigation.** The navigation is in-house (about 250 lines including docs) instead of the Navigation library:
 - `Route` is a sealed interface listing every destination. `ShunyaNavHost` maps each route to one entry composable in the owner's package.
 - `Navigator` keeps a snapshot-state back stack of `NavEntry`s. Each entry is a `ViewModelStoreOwner`, so `viewModel { }` lives exactly as long as its screen is on the stack. Entries are cleared after their exit animation, and saved UI state is keyed per entry.
 - The back stack lives in a `ViewModel`, so it survives the recreation caused by a language switch.
@@ -204,7 +204,7 @@ around focus.
 |---|---|---|
 | Manual DI (`AppContainer`) instead of Hilt/Koin | no annotation processing or KSP; readable, fast builds; one object graph | wiring by hand; no scoping beyond app and screen |
 | DataStore with JSON instead of Room | small documents; atomic updates; schema evolution by defaults; trivial backup | no queries; whole-document writes (fine at this size) |
-| In-house navigation | launcher-specific Back and Home semantics; per-screen ViewModel stores in about 150 lines | no deep links or type-safe arguments library (not needed) |
+| In-house navigation | launcher-specific Back and Home semantics; per-screen ViewModel stores in about 250 lines | no deep links or type-safe arguments library (not needed) |
 | Contracts in `core`, implementations in features | features were built on parallel branches without merge conflicts; features are testable in isolation | a few indirections (e.g. `LaunchPolicy` behind `AppLauncher`) |
 | Text only, no icons | the product's identity; also makes cold start and memory trivial | recognition relies on names (renaming and fuzzy search compensate) |
 | On-demand focus evaluation, no alarms | no background work, no exact-alarm permission, battery-neutral | schedule side effects (grayscale) apply the next time Shunya evaluates, not at the exact minute |

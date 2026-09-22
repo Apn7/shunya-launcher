@@ -23,7 +23,7 @@ import dev.apn7.shunya.core.designsystem.theme.Spacing
 import dev.apn7.shunya.core.model.PermissionStatus
 import dev.apn7.shunya.core.navigation.Navigator
 import dev.apn7.shunya.core.system.SystemIntents
-import dev.apn7.shunya.core.system.startFirstAvailable
+import dev.apn7.shunya.core.system.startSafely
 import dev.apn7.shunya.feature.focus.ui.Paragraph
 
 /**
@@ -39,7 +39,7 @@ fun AccessibilityDisclosureEntry(navigator: Navigator) {
     AccessibilityDisclosureScreen(
         enabled = permissions.isAccessibilityEnabled,
         onBack = navigator::back,
-        onOpenSettings = { context.startFirstAvailable(SystemIntents.accessibilitySettings(context)) },
+        onOpenSettings = { context.startSafely(SystemIntents.accessibilitySettings()) },
     )
 }
 

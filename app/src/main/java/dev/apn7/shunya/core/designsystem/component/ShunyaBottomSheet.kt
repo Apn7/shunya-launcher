@@ -59,7 +59,6 @@ fun ShunyaBottomSheet(
         shape = RoundedCornerShape(topStart = 20.dp, topEnd = 20.dp),
         containerColor = colors.surface,
         contentColor = colors.ink,
-        tonalElevation = 0.dp,
         scrimColor = colors.scrim,
         dragHandle = { SheetHandle() },
     ) {
