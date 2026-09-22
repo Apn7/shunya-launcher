@@ -194,6 +194,7 @@
     <string name="settings_language_open_system">Open language settings</string>
 
     <!-- About -->
+    <string name="settings_about_name_bangla" translatable="false">শূন্য</string>
     <string name="settings_about_tagline">Zero noise.</string>
     <string name="settings_about_meaning_title">The name</string>
     <string name="settings_about_meaning">Shunya (শূন্য) is Bangla and Sanskrit for zero, or emptiness. A home screen with nothing extra, only what you choose.</string>
