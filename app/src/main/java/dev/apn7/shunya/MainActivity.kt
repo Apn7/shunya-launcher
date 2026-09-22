@@ -18,6 +18,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import dev.apn7.shunya.core.designsystem.applySystemBars
 import dev.apn7.shunya.core.designsystem.theme.ShunyaTheme
 import dev.apn7.shunya.core.navigation.Navigator
+import dev.apn7.shunya.core.navigation.Route
 import dev.apn7.shunya.core.navigation.ShunyaNavHost
 
 /**
@@ -76,6 +77,10 @@ class MainActivity : ComponentActivity() {
         super.onNewIntent(intent)
         if (intent.action != Intent.ACTION_MAIN) return
         val wasAlreadyHome = hasWindowFocus() && (intent.flags and Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT) == 0
+        // Leaving onboarding with Home counts as skipping it, so it shows on first launch only.
+        if (Route.Onboarding in navigator.backStack) {
+            appContainer.settingsRepository.edit { it.copy(onboardingDone = true) }
+        }
         navigator.popToRoot()
         appContainer.homeEvents.onHomePressed(wasAlreadyHome)
     }

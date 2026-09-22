@@ -50,6 +50,4 @@
 
     <string name="core_error_open_app">Couldn\'t open this app</string>
     <string name="core_error_no_handler">No app on this phone can do that</string>
-    <string name="core_placeholder_title">Coming soon</string>
-    <string name="core_placeholder_message">This part of Shunya is still being built.</string>
 </resources>

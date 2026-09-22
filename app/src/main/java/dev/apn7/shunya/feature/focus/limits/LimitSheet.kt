@@ -13,9 +13,7 @@ import dev.apn7.shunya.core.designsystem.component.ShunyaButtonStyle
 import dev.apn7.shunya.core.designsystem.formatDuration
 import dev.apn7.shunya.core.designsystem.theme.ShunyaTheme
 import dev.apn7.shunya.core.designsystem.theme.Spacing
-
-/** Daily limit choices offered everywhere, in minutes. */
-internal val LIMIT_PRESETS_MINUTES: List<Int> = listOf(15, 30, 45, 60, 90, 120)
+import dev.apn7.shunya.core.model.ProductLimits
 
 /**
  * Bottom sheet to set, change or remove the daily limit of one app. [currentMinutes] null means
@@ -37,7 +35,7 @@ internal fun LimitSheet(
             color = ShunyaTheme.colors.ink,
             modifier = Modifier.padding(horizontal = Spacing.screenHorizontal, vertical = Spacing.s),
         )
-        LIMIT_PRESETS_MINUTES.forEach { minutes ->
+        ProductLimits.DAILY_LIMIT_PRESETS_MINUTES.forEach { minutes ->
             SheetAction(
                 text = stringResource(R.string.focus_limit_per_day, formatDuration(resources, minutes * MINUTE_MILLIS)),
                 summary = if (minutes == currentMinutes) stringResource(R.string.focus_limit_current) else null,

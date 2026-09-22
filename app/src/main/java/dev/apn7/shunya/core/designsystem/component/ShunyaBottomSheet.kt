@@ -9,7 +9,9 @@ import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.Text
@@ -27,7 +29,8 @@ import kotlinx.coroutines.launch
 
 /**
  * Modal bottom sheet in Shunya colours (app actions, quick menu). Show it by composing it; remove
- * it from composition in [onDismiss]. [content] is laid out in a column and receives `close`,
+ * it from composition in [onDismiss]. [content] is laid out in a scrolling column (don't add
+ * another vertical scroll or a LazyColumn inside) and receives `close`,
  * which animates the sheet away and then calls [onDismiss]: call it before acting on a choice.
  *
  * ```
@@ -63,6 +66,7 @@ fun ShunyaBottomSheet(
         Column(
             modifier = Modifier
                 .fillMaxWidth()
+                .verticalScroll(rememberScrollState())
                 .navigationBarsPadding()
                 .padding(bottom = Spacing.m),
         ) {

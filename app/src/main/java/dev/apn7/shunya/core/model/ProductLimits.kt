@@ -15,6 +15,9 @@ object ProductLimits {
     const val PAUSE_SECONDS_MAX = 30
     const val PAUSE_SECONDS_DEFAULT = 10
 
+    /** Daily-limit choices offered everywhere (action sheet, focus screens), minutes. */
+    val DAILY_LIMIT_PRESETS_MINUTES: List<Int> = listOf(15, 30, 45, 60, 90, 120)
+
     /** "5 more minutes" on the limit screen; at most one extension per app per day. */
     const val LIMIT_EXTENSION_MINUTES = 5
 

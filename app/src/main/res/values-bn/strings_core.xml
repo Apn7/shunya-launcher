@@ -48,6 +48,4 @@
 
     <string name="core_error_open_app">অ্যাপটি খোলা গেল না</string>
     <string name="core_error_no_handler">এই কাজ করার মতো কোনো অ্যাপ ফোনে নেই</string>
-    <string name="core_placeholder_title">শীঘ্রই আসছে</string>
-    <string name="core_placeholder_message">শূন্যের এই অংশ এখনো তৈরি হচ্ছে।</string>
 </resources>

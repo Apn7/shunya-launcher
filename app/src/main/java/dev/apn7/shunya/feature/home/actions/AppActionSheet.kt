@@ -3,8 +3,6 @@ package dev.apn7.shunya.feature.home.actions
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.Immutable
@@ -60,7 +58,7 @@ internal fun AppActionSheet(state: AppActionState, callbacks: AppActionCallbacks
             close()
             action()
         }
-        Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
+        Column {
             SheetHeader(state)
             if (state.shortcuts.isNotEmpty()) {
                 SheetSectionTitle(stringResource(R.string.apps_shortcuts))

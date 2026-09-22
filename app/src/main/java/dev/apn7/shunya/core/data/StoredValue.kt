@@ -42,9 +42,16 @@ open class StoredValue<T>(
 
     /**
      * Fire-and-forget [update] on the app scope. The write completes even if the calling screen
-     * closes right away, so this is the right choice for toggles and pickers in UI code.
+     * closes right away, so this is the right choice for toggles and pickers in UI code. A failed
+     * write (I/O error) is dropped instead of crashing the process.
      */
     fun edit(transform: (T) -> T) {
-        scope.launch { update(transform) }
+        scope.launch {
+            try {
+                update(transform)
+            } catch (e: IOException) {
+                // Disk full or file not writable: keep running with the previous value.
+            }
+        }
     }
 }

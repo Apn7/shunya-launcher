@@ -7,6 +7,7 @@ import dev.apn7.shunya.R
 import dev.apn7.shunya.core.model.AppUsage
 import dev.apn7.shunya.core.model.LaunchDecision
 import dev.apn7.shunya.core.model.LauncherApp
+import dev.apn7.shunya.core.model.ProductLimits
 import dev.apn7.shunya.core.system.SystemIntents
 import dev.apn7.shunya.core.system.startSafely
 import kotlinx.coroutines.Dispatchers
@@ -14,7 +15,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 /** Daily limit presets offered in the action sheet, minutes (0 = off). */
-internal val DailyLimitPresets: List<Int> = listOf(0, 15, 30, 45, 60, 90, 120)
+internal val DailyLimitPresets: List<Int> = listOf(0) + ProductLimits.DAILY_LIMIT_PRESETS_MINUTES
 
 /**
  * Everything the app action sheet can do to one app (PRD 3.2). Writes go through the core
@@ -64,11 +65,8 @@ internal class AppActionsController(
 
     /** System uninstall dialog; work-profile apps name their profile so the right copy is removed. */
     fun uninstall(app: LauncherApp) {
-        val intent = SystemIntents.uninstall(app.packageName)
-        if (app.isWork) {
-            container.appLauncher.userFor(app.key)?.let { user -> intent.putExtra(EXTRA_USER, user) }
-        }
-        context.startSafely(intent)
+        val user = if (app.isWork) container.appLauncher.userFor(app.key) else null
+        context.startSafely(SystemIntents.uninstall(app.packageName, user))
     }
 
     /** Today's usage, or null without usage access. */
@@ -96,10 +94,5 @@ internal class AppActionsController(
 
     private fun toast(message: String) {
         Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
-    }
-
-    private companion object {
-        /** `Intent.EXTRA_USER`: the profile the uninstaller should act on (value spelled out on purpose). */
-        const val EXTRA_USER = "android.intent.extra.USER"
     }
 }

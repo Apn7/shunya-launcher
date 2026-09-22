@@ -8,6 +8,7 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Build
+import android.os.UserHandle
 import android.provider.AlarmClock
 import android.provider.CalendarContract
 import android.provider.Settings
@@ -44,8 +45,12 @@ object SystemIntents {
     fun appDetails(packageName: String): Intent =
         Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, packageUri(packageName))
 
-    /** System uninstall dialog for [packageName] (personal profile). */
-    fun uninstall(packageName: String): Intent = Intent(Intent.ACTION_DELETE, packageUri(packageName))
+    /** System uninstall dialog for [packageName]; pass the work profile's [user] for work apps. */
+    fun uninstall(packageName: String, user: UserHandle? = null): Intent {
+        val intent = Intent(Intent.ACTION_DELETE, packageUri(packageName))
+        if (user != null) intent.putExtra(Intent.EXTRA_USER, user)
+        return intent
+    }
 
     /** System screen to pick the default home app (fallback when RoleManager is unavailable). */
     fun homeSettings(): Intent = Intent(Settings.ACTION_HOME_SETTINGS)
